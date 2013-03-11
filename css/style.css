@@ -3,9 +3,6 @@ body {
 	margin: 24px auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-}
-
-.page-wrap {
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -13,14 +10,14 @@ body {
 	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	
 	-webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
  }
  
  h1 {
