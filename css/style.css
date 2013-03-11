@@ -1,8 +1,9 @@
 body {
-	width: 98%;
-	margin: 1% auto;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
