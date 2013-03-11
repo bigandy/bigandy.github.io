@@ -32,5 +32,5 @@ body {
 	  -webkit-flex: 1;          /* Chrome */
 	  -ms-flex: 1;              /* IE 10 */
 	  flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	  padding: 0 0.1%;
+	  padding: 0 1%;
 }
