@@ -20,6 +20,11 @@ body {
 	align-items: center;
  }
  
+ h1 {
+ 	margin-right: 20px;
+ 	border-right: 10px solid #3d79d0;
+ }
+ 
  h1,
  p {
  	  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
