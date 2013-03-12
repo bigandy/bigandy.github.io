@@ -1,16 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>bigandy.github.com</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<h1>bigandy - front-end WordPress Developer, chocoholic</h1>
-	<ul>
-		<li><a href="http://big-andy.co.uk">big-andy.co.uk</a></li>
-		<li><a href="http://twitter.com/bigandy">@bigandy</a></li>
-	</ul>
-</body>
-</html>
+---
+layout: layout
+title: "Andrew Hudson"
+---
+{% for post in site.posts offset: 0 limit: 50 %}
+<div class="row">
+  <article>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p>
+      {{ post.summary }}
+    </p>
+    <p><a href="{{ post.url }}">Read more</a></p>
+  </article>
+</div>
+{% endfor %}

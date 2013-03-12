@@ -9,28 +9,28 @@ body {
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	
+
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	
+
 	-webkit-align-items: center;
 	-moz-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
  }
- 
+
  h1 {
  	border-right: 10px solid #3d79d0;
  }
- 
+
  ul {
  	list-style: none;
  	padding: 0;
  	margin: 0;
  }
- 
+
  h1,
  ul {
  	  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
