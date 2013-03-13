@@ -10,8 +10,7 @@ published: true
 summary: A taster of what Jekyll has to offer
 ---
 
-<div class="row">
-      <h2>Trying out Jekyll</h2>
-      <p>To see how this thing works I am trying it out myself.</p>
-</div>
+<h2>Introduction to Jekyll</h2>
+<p>To see how this thing works I am trying it out myself.</p>
+
 
