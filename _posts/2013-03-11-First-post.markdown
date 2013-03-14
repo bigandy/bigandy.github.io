@@ -1,11 +1,6 @@
 ---
 layout: post
 title: My first post
-category: Coding
-tags: jekyll bootstrap github disqus
-year: 2013
-month: 3
-day: 11
 published: true
 summary: Hello World!
 ---

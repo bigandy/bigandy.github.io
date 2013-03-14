@@ -1,11 +1,6 @@
 ---
 layout: post
 title: My first taste of Jekyll
-category: Coding
-tags: jekyll bootstrap github disqus
-year: 2013
-month: 3
-day: 12
 published: true
 summary: A taster of what Jekyll has to offer
 ---
