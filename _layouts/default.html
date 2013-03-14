@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <!-- Prefetch DNS for external assets (Twitter widgets etc). -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet'>
-    <link href="/css/style.css" rel="stylesheet">
-
-  </head>
-<body>
+{% include head.html %}
 
 {% include header.html %}
 
 
-<main role="main" class="container">
-    {{ content }}
-</main>
+    <main role="main" class="container">
+        {{ content }}
+    </main>
 
-  </body>
+    </body>
 </html>
