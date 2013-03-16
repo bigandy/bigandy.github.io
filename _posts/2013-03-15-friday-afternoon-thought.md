@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 published: true
 title: Friday Afternoon Thought
 Summary: Thinking out loud on a rainy Friday afternoon
