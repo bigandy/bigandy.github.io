@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Friday Afternoon Thought
-Summary: Thinking out loud on a rainy Friday afternoon
+summary: Thinking out loud on a rainy Friday afternoon
 ---
 
 Rain is falling from a dark grey sky marking the end of Winter and the start of Spring. There's a lot 
