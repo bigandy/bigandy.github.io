@@ -2,7 +2,7 @@
 layout: default
 published: true
 title: Running at Lunch!
-Summary: First run of the month. 5.55 miles in 44:28
+summary: First run of the month. 5.55 miles in 44:28
 ---
 
 This is the first time I’ve been running in March and it’s also the longest lunchtime run that I’ve done. 5.55 miles in 44:28.
