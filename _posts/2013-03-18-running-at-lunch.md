@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 published: true
 title: Running at Lunch!
 summary: First run of the month. 5.55 miles in 44:28
