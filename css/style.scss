@@ -32,35 +32,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.page--home {
-    background: rgba(red, 0.1);
-}
-
-.page--blog {
-    background: rgba(green, 0.1);
-}
-
 main {
     background: white;
-    padding: 1em 2.5%;
+    // padding: 1em 2.5%;
 }
-
-// article {
-//     position: relative;
-
-
-//     &:before {
-//         position: absolute;
-//         bottom: 25px;
-//         left: 10px;
-//         content: "";
-//         height: 10px;
-//         width: 30%;
-//         // background: orange;
-//         background: url(../images/swirl.jpg) no-repeat -55px -327px;
-//     }
-// }
-
 
 
 h1,h2,h3,h4,h5,h6 {
@@ -81,4 +56,19 @@ a {
     &:hover {
     	text-decoration: underline;
     }
+}
+
+nav {
+    margin-bottom: 50px;
+    
+    > a {
+        padding: 1em 1em 1em 0; 
+    }
+}
+
+.selected {
+            color: red;
+}
+.hidden {
+    display: none;
 }
