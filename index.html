@@ -4,16 +4,23 @@ title: Andrew Hudson
 page-class: page--home
 ---
 {% for post in site.posts offset: 0 limit: 50 %}
-<div class="row">
-  <article>
-    <h1>
-        <a href="{{ post.url }}">
-            {{ post.title }}
-        </a>
-    </h1>
-    <p>
-      {{ post.summary }}
-    </p>
-  </article>
-</div>
+  {% if post.category != "demos" %}
+    <div class="row">
+      <article>
+        <h1>
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h1>
+        <p>
+          {{ post.summary }}
+        </p>
+      </article>
+    </div>
+  {% else %}
+
+
+
+
+  {% endif %}
 {% endfor %}

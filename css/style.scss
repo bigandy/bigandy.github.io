@@ -60,15 +60,25 @@ a {
 
 nav {
     margin-bottom: 50px;
-    
+
     > a {
-        padding: 1em 1em 1em 0; 
+        padding: 1em 1em 1em 0;
     }
 }
 
-.selected {
-            color: red;
+.pagination {
+    margin-top: 50px;
 }
+
+.selected, {
+    color: red;
+}
+.page--home .nav--home,
+.page--blog .nav--blog,
+.page--demos .nav--demos {
+    @extend .selected;
+}
+
 .hidden {
     display: none;
 }

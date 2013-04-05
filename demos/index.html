@@ -2,48 +2,26 @@
 layout: demos
 title: Andrew Hudson
 page-class: page--demos
+category: demos
 ---
-    <script src="/js/jquery.js"></script>
-    <script src="/js/demos/script.js"></script>
-</head>
-<body class="{{ page.page-class }}">
-
-    <header class="header">
-        <h1><a href="/demos/">Demos - bigandy.github.com</a></h1>
-
-        <nav>
-            <a href="/">Home</a>
-            <a href="/demos" class="selected">Demos</a>
-        </nav>
-    </header>
-
-
     <main role="main" class="container">
 
-        <h1>JavaScript Learning</h1>
-
-        <div id="tabs" class="tabs-container">
-            <div class="tab">
-                <h2>Tab 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe molestias obcaecati sed at accusantium odio quam doloremque tenetur? Vitae, nam sequi consequatur voluptates odit eum temporibus incidunt veritatis aliquid repellendus!</p>
-            </div>
-            <div class="tab">
-                <h2>Tab 2</h2>
-                <p>Voluptatum, voluptate, cupiditate, nisi, quo pariatur eum quidem asperiores expedita dolorem magnam illum eligendi adipisci labore. Molestias, ipsa, officiis, totam, officia quas consequuntur ut sunt repellat reiciendis error quisquam minima!</p>
-            </div>
-            <div class="tab">
-                <h2>Tab 3</h2>
-                <p>Saepe, cum, eligendi, placeat minus at sit optio soluta vitae blanditiis inventore sint adipisci atque illum cumque rem repellat necessitatibus ducimus quibusdam culpa temporibus. Perspiciatis, aliquam molestias dicta a ab?</p>
-            </div>
-            <div class="tab">
-                <h2>Tab 4</h2>
-                <p>Ipsam, non, reprehenderit aperiam aliquam distinctio quia sequi fugit cupiditate in eaque alias eius quisquam autem. Atque, voluptatem dignissimos rerum impedit soluta corporis vero aspernatur dolorem quas autem enim suscipit.</p>
-            </div>
-            <div class="tab">
-                <h2>Tab 5</h2>
-                <p>Maxime, amet, quasi, cupiditate assumenda nihil similique corporis explicabo cumque blanditiis quaerat ab optio nulla fuga ea laudantium unde sunt recusandae ducimus eos molestias ad molestiae dignissimos numquam dolor magni.</p>
-            </div>
+        {% for post in site.categories.demos offset: 0 limit: 50 %}
+        <div class="row">
+          <article>
+            <h1>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h1>
+            <p>
+              {{ post.summary }}
+            </p>
+          </article>
         </div>
+        {% endfor %}
+
+
 
 
     </main>
