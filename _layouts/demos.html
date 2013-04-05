@@ -6,6 +6,9 @@
 	    <main role="main" class="container">
 	        {{ content }}
 	    </main>
-
+	    {% if page.script %}
+	    <script src="/js/jquery.min.js" ></script>
+	    <script src="/js/demos/{{ page.script }}" async defer></script>
+	    {% endif %}
     </body>
 </html>
