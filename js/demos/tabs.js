@@ -1,4 +1,4 @@
-/* Here's some JS ! */
+/* Tabs v1 */
 
 
 $(document).ready(function() {

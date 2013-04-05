@@ -56,6 +56,12 @@ a {
     &:hover {
     	text-decoration: underline;
     }
+    &:hover {
+        color: red;
+    }
+    &:focus {
+        color: blue;
+    }
 }
 
 nav {
@@ -64,6 +70,15 @@ nav {
     > a {
         padding: 1em 1em 1em 0;
     }
+}
+
+code {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+pre {
+    background: lighten(gray, 30%);
+    padding-left: 1em;
 }
 
 .pagination {
@@ -82,3 +97,5 @@ nav {
 .hidden {
     display: none;
 }
+
+
