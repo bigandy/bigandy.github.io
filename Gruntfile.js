@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'js/demos/*.js'
+                'js/*.js'
             ]
         },
 
@@ -42,6 +42,9 @@ module.exports = function(grunt) {
                     ],
                     'js/build/demos/tabs2.js': [
                         'js/demos/tabs2.js'
+                    ],
+                    'js/build/jquery.min.js': [
+                        'js/jquery.js'
                     ],
                 }
             }
