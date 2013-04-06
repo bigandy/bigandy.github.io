@@ -4,11 +4,10 @@
   "description": "Custom WordPress theme for Client by Iron to Iron",
   "main": "Gruntfile.js",
   "dependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-compass": "~0.1.3",
-    "grunt-contrib-jshint": "~0.2.0",
-    "grunt-contrib-uglify": "~0.1.2",
-    "grunt-contrib-watch": "~0.3.1",
-    "grunt-jekyll": "~0.2.2"
+    "grunt": "~0.4.0"
+    ,"grunt-contrib-compass": "~0.1.3"
+    ,"grunt-contrib-jshint": "~0.2.0"
+    ,"grunt-contrib-uglify": "~0.1.2"
+    ,"grunt-contrib-watch": "~0.3.1"
   }
 }
