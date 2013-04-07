@@ -4,7 +4,9 @@ title: jQuery Tabs
 published: true
 summary: My first attempt at creating a tabbed interface with jQuery.
 category: demos
-script: tabs.js
+script:
+- jquery.min.js
+- demos/tabs.js
 ---
 
 <div id="tabs" class="tabs-container">

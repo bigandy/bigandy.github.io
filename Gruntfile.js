@@ -83,8 +83,22 @@ module.exports = function(grunt) {
                 files: [
                     '<%= jshint.all %>'
                 ],
-                tasks: ['jshint', 'uglify']
+                tasks: ['jshint', 'uglify', 'requirejs']
             }
+        },
+
+        // require js options
+        requirejs: {
+          compile: {
+            options: {
+              baseUrl: "js/require/start/",
+              mainConfigFile: "js/require/start/main.js",
+              out: "js/require/end/optimized.js",
+              generateSourceMaps: true,
+              optimize: "uglify2",
+              preserveLicenseComments: false
+            }
+          }
         }
 
     });
@@ -94,13 +108,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     // register task
     grunt.registerTask('default', [
-        'jshint',
+        // 'jshint',
         'compass',
-        'uglify',
-        'watch'
+        // 'uglify',
+        'watch',
+        'requirejs',
     ]);
 
 };
