@@ -11,7 +11,7 @@
     <link href="/css/style.css" rel="stylesheet" />
     {% if page.script %}
     {% for item in page.script %}
-    <script src="/js/build/{{ item }}"></script>{% endfor %}
+    <script src="/js/{{ item }}"></script>{% endfor %}
     {% endif %}
     {% if page.custom-script %}{{ page.custom-script }}{% endif %}
    </head>

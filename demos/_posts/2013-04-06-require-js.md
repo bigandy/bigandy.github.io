@@ -4,5 +4,5 @@ title: Require JS
 published: true
 summary: Trying out requirejs
 category: demos
-custom-script: [<script data-main="/js/require/main" src="/js/require/require-jquery.js"></script>]
+custom-script: [<script src="/js/libs/require.js" data-main="/js/config"></script>]
 ---
