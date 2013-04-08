@@ -2,13 +2,13 @@
 
 $(document).ready(function() {
 
-	function tabs(opts) {
+	function tabsFunc(opts) {
 
 		// define default settings
 		var defaults = {
 			'selected': 4,
 			'time': 300
-		}
+		};
 
 		var settings = $.extend({}, defaults, opts), // extend defaults with the opts that are inputted into the function
 			tabContainer = $("#tabs"),
@@ -63,6 +63,6 @@ $(document).ready(function() {
 	};
 
 	// Call the function with options
-	tabs(myOpts);
+	tabsFunc(myOpts);
 
 });

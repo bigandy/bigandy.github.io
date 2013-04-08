@@ -4,7 +4,10 @@ title: jQuery Tabs v2
 published: true
 summary: My second attempt at creating a tabbed interface with jQuery.
 category: demos
-script: tabs2.js
+script: 
+- jquery.min.js
+- demos/tabs2.js
+
 post-class: tabs2
 ---
 

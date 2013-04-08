@@ -4,3 +4,4 @@ markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:title
 paginate: 10
+exclude: ['node_modules', '.gitignore', 'README.md', 'Gruntfile.js', 'bigandy.github.sublime-project', 'package.json', 'jquery.js', 'js/demos']
