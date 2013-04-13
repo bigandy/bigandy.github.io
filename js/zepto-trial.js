@@ -15,7 +15,7 @@ yepnope({
 				console.log(thehtmlWidth);
 				console.log(thehtmlHeight);
 
-			$("a").on("click", function(e){
+			$("a.lightbox-trigger").on("click", function(e){
 				e.preventDefault();
 				// console.log($(this));	
 
@@ -33,6 +33,8 @@ yepnope({
 					console.log($(this));
 				});
 			});
+
+
 
 			
 

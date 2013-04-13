@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Source+Code+Pro' rel='stylesheet' />
     <link href="/css/style.css" rel="stylesheet" />
-    {% if page.script %}
-    {% for item in page.script %}
-    <script src="/js/{{ item }}"></script>{% endfor %}
-    {% endif %}
-    {% if page.custom-script %}{{ page.custom-script }}{% endif %}
+    {% if page.css %}
+	    {% for item in page.css %}
+	    <link rel="stylesheet" href="/css/{{ item }}" />
+	    {% endfor %}
+	{% endif %}
    </head>
 <body class="page {{ page.page-class }}">
