@@ -1,0 +1,47 @@
+.responsive-nav {
+	@extend .cf;
+
+    nav {
+		float: right;
+
+		.button {
+			background: red;
+			padding: 20px;
+			margin-top: 0;
+			
+			
+		}
+
+        a {
+            padding: 10px;
+            margin-top: 10px;
+            display: block;
+            float: left;
+            border-radius: 3px;
+            vertical-align: baseline;
+
+            &:hover, 
+			&:focus {
+				color: white;
+				background: rgba(red, 0.25);
+			}
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .responsive-nav {
+    	nav a {
+    		float: none;
+    		padding-top: 0.25em;
+    		padding-bottom: 0.25em;
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		text-align: center;
+    		width: 100%;
+    	}
+    }
+}

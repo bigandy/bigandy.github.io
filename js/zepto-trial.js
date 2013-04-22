@@ -6,18 +6,13 @@ yepnope({
   nope: '/js/libs/zeptojs/zepto.min.js',
   callback: function() {
   		Zepto(function($){
-			// console.log('Ready to Zepto!');
 
 			var thehtml = $("html"),
 				thehtmlHeight = thehtml.height(),
 				thehtmlWidth = thehtml.width();
 
-				// console.log(thehtmlWidth);
-				// console.log(thehtmlHeight);
-
-			$("a.lightbox-activator").on("click", function(e){
+			$("a.lightbox-trigger").on("click", function(e){
 				e.preventDefault();
-				// console.log($(this));
 
 				thehtml.append('<div id="overlay" />');
 				var overlay = $("#overlay"),
@@ -31,34 +26,8 @@ yepnope({
 
 				overlay.width(thehtmlWidth).height(thehtmlHeight);
 
-				// console.log($("div.overlay-inner").text());
-
-
-
-
 			});
 
-			// console.log(overlay);
-
-
-
-
-
-
-
-
-
-
 		});
-
-
-
-
-
-
-
-
-
-
   }
 });

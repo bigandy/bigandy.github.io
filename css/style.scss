@@ -109,11 +109,18 @@ body {
     background: rgba(black, 0.5);
     z-index: 999999;
 }
-.overlay-inner {
-    background: white;
-    border-radius: 5px;
-    padding: 1em;
-    margin: 5%;
-    width: 50%;
-    height: 100px;
+
+
+@import "responsive-nav";
+
+
+/* Screens Wider than 720px */
+
+@media screen and (min-width: 720px) {
+    header,
+    main,
+    footer {
+        width: 700px;
+        margin: 1em auto;
+    }
 }

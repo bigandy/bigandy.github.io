@@ -6,6 +6,10 @@
 	    <main role="main" class="container">
 	        {{ content }}
 	    </main>
-
+		{% if page.script %}
+	    {% for item in page.script %}
+	    <script src="/js/{{ item }}"></script>{% endfor %}
+	    {% endif %}
+	    {% if page.custom-script %}{{ page.custom-script }}{% endif %}
     </body>
 </html>
