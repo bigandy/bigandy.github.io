@@ -109,3 +109,11 @@ body {
     background: rgba(black, 0.5);
     z-index: 999999;
 }
+.overlay-inner {
+    background: white;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 5%;
+    width: 50%;
+    height: 100px;
+}

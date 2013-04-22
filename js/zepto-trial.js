@@ -6,35 +6,43 @@ yepnope({
   nope: '/js/libs/zeptojs/zepto.min.js',
   callback: function() {
   		Zepto(function($){
-			console.log('Ready to Zepto!');
+			// console.log('Ready to Zepto!');
 
 			var thehtml = $("html"),
 				thehtmlHeight = thehtml.height(),
 				thehtmlWidth = thehtml.width();
 
-				console.log(thehtmlWidth);
-				console.log(thehtmlHeight);
+				// console.log(thehtmlWidth);
+				// console.log(thehtmlHeight);
 
-			$("a").on("click", function(e){
+			$("a.lightbox-activator").on("click", function(e){
 				e.preventDefault();
-				// console.log($(this));	
+				// console.log($(this));
 
 				thehtml.append('<div id="overlay" />');
-				var overlay = $("#overlay");
-				overlay.width(thehtmlWidth);
-				overlay.height(thehtmlHeight);
+				var overlay = $("#overlay"),
+					$this = $(this),
+					overlayContent = $this.data('content');
+
+					$('<div>', {
+						text: overlayContent,
+						class: 'overlay-inner'
+					}).appendTo(overlay);
+
+				overlay.width(thehtmlWidth).height(thehtmlHeight);
+
+				// console.log($("div.overlay-inner").text());
 
 
 
 
-				// does this really need to be within this on() ??
-				overlay.on("click", function() {
-					$(this).remove();
-					console.log($(this));
-				});
 			});
 
-			
+			// console.log(overlay);
+
+
+
+
 
 
 
