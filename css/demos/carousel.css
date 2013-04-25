@@ -1,0 +1,22 @@
+/*.carousel-v1 {
+	width: 100%;
+}*/
+
+
+.carousel {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.carousel img {
+	float: left;
+	display: block;
+
+}
+
+.prev {
+	float: left;
+}
+.next {
+	float: right;
+}
