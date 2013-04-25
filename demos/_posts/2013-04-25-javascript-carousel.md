@@ -19,7 +19,7 @@ css:
 		<img src="/images/hot/hot4.jpg" alt="">
 		<img src="/images/hot/hot5.jpg" alt="">
 		<img src="/images/hot/hot6.jpg" alt="">
-		<!-- <img src="/images/hot/hot1.jpg" alt=""> -->
+		<img src="/images/hot/hot1.jpg" alt="">
 		<img src="/images/hot/hot2.jpg" alt="">
 		<img src="/images/hot/hot3.jpg" alt="">
 		<img src="/images/hot/hot4.jpg" alt="">
