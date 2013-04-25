@@ -74,16 +74,6 @@ $(document).ready(function() {
 
 		if ($this.text() === "prev") {
 
-			if (current === imgsLength - 1) {
-				current = -1;
-			}
-			carouselInner.css({
-				"margin-left": -imgsWidth * (current + 1)
-			});
-
-			current++;
-			h2.text(current);
-		} else {
 			if (current === 0) {
 				current = imgsLength;
 			}
@@ -93,6 +83,17 @@ $(document).ready(function() {
 			});
 
 			current--;
+			h2.text(current);
+		} else {
+			if (current === imgsLength - 1) {
+				current = -1;
+			}
+
+			carouselInner.css({
+				"margin-left": -imgsWidth * (current + 1)
+			});
+
+			current++;
 			h2.text(current)
 		}
 
