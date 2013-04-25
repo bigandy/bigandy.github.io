@@ -1,6 +1,4 @@
 /* Tabs v1 */
-
-
 $(document).ready(function() {
 	(function(){
 		var tabs = $("div#tabs"),
