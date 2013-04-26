@@ -6,7 +6,7 @@ summary: My first attempt at creating a carousel with jQuery.
 category: demos
 post-class: carousel-v1
 script:
-- libs/jquery.min.js
+- libs/jquery/jquery.min.js
 - modules/carousel.js
 css:
 - demos/carousel.css

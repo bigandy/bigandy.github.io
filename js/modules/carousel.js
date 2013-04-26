@@ -66,8 +66,8 @@ $(document).ready(function() {
 
 	// console.log(h2Text);
 
-	links.on("click", function(){
-
+	links.on("click", function(e){
+		e.preventDefault();
 		var $this = $(this);
 
 
