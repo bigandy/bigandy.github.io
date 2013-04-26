@@ -29,7 +29,19 @@ $(document).ready(function() {
 		}
 	};
 
+	// visual representation of the nav
+	$("<ul></ul>", {
+		id: "navigation"
+	}).appendTo(carousel);
+	var nav = $("#navigation");
 
+	for ( var i = 0, len = imgsLength; i < len; i++  ) {
+		// console.log(i);
+		$("<li />", {
+			class: 'item-'+i
+		}).appendTo(nav);
+	}
+	nav.find("li").eq(current).addClass('current-nav').siblings().removeClass('current-nav');
 
 	// console.log(linkArgs);
 
@@ -97,6 +109,7 @@ $(document).ready(function() {
 			h2.text(current)
 		}
 
+		nav.find("li").eq(current).addClass('current-nav').siblings().removeClass('current-nav');
 
 	});
 

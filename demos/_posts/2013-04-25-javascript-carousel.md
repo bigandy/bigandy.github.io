@@ -35,4 +35,7 @@ here's what I need to do:
 - create left and right links
 - work out where we are currently
 - if click left or right, go onto previous or next image
+- create counter that shows which image i'm on
+- create visual counter, e.g. blobs with current blob being different colour
+- when click on blog, take you to that image
 
