@@ -25,6 +25,9 @@
 	text-align: center;
 }
 
+.carousel ul {
+	margin-left: 0;
+}
 
 
 .carousel li {
@@ -32,14 +35,22 @@
 	list-style-type: none;
 	border-radius: 50px;
 	background: red;
-	height: 10px;
-	width: 10px;
+	height: 20px;
+	width: 20px;
+	margin: 10px;
+}
+
+.carousel li:hover {
+	cursor: pointer;
 }
 
 .carousel li.current-nav {
 	background: blue;
 }
 
-.carousel li + li {
-	margin-left: 10px;
+#slider-nav {
+	display: none;
+}
+.funkyBorder {
+	border: 10px solid red;
 }

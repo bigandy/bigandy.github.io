@@ -19,7 +19,7 @@ css:
 		<img src="/images/hot/hot4.jpg" alt="">
 		<img src="/images/hot/hot5.jpg" alt="">
 		<img src="/images/hot/hot6.jpg" alt="">
-		<img src="/images/hot/hot1.jpg" alt="">
+		<!-- <img src="/images/hot/hot1.jpg" alt=""> -->
 		<img src="/images/hot/hot2.jpg" alt="">
 		<img src="/images/hot/hot3.jpg" alt="">
 		<img src="/images/hot/hot4.jpg" alt="">
@@ -30,12 +30,12 @@ css:
 
 here's what I need to do:
 
-- get number of images (imgs.length)
-- width of each image (here they are all the same width)
-- create left and right links
-- work out where we are currently
-- if click left or right, go onto previous or next image
-- create counter that shows which image i'm on
-- create visual counter, e.g. blobs with current blob being different colour
-- when click on blog, take you to that image
+- <strike>get number of images (imgs.length)</strike>
+- <strike>width of each image (here they are all the same width)</strike>
+- <strike>create left and right links</strike>
+- <strike>work out where we are currently</strike>
+- <strike>if click left or right, go onto previous or next image</strike>
+- <strike>create counter that shows which image i'm on</strike>
+- <strike>create visual counter, e.g. blobs with current blob being different colour</strike>
+- when click on blob, take you to that image ==> do on next iteration of carousel
 

@@ -1,4 +1,4 @@
-/* Tabs v1 */
+/* Carousel v1 */
 $(document).ready(function() {
 	var carousel = $("#carousel"),
 		imgs = carousel.find('img'),
@@ -35,13 +35,16 @@ $(document).ready(function() {
 	}).appendTo(carousel);
 	var nav = $("#navigation");
 
+
 	for ( var i = 0, len = imgsLength; i < len; i++  ) {
 		// console.log(i);
 		$("<li />", {
 			class: 'item-'+i
 		}).appendTo(nav);
 	}
-	nav.find("li").eq(current).addClass('current-nav').siblings().removeClass('current-nav');
+	var navLi = nav.find("li");
+
+	navLi.eq(current).addClass('current-nav').siblings().removeClass('current-nav');
 
 	// console.log(linkArgs);
 
@@ -74,9 +77,6 @@ $(document).ready(function() {
 	var links = carousel.find("a")
 		h2 = carousel.find("h2"),
 		h2Text = h2.text();
-	// console.log(links);
-
-	// console.log(h2Text);
 
 	links.on("click", function(e){
 		e.preventDefault();
@@ -109,13 +109,20 @@ $(document).ready(function() {
 			h2.text(current)
 		}
 
-		nav.find("li").eq(current).addClass('current-nav').siblings().removeClass('current-nav');
+		navLi.eq(current).addClass('current-nav').siblings().removeClass('current-nav');
 
+
+
+
+	});// end on.click
+
+
+	navLi.on("click", function() {
+		var $this = $(this);
+
+		var eq = $this.attr("class");
+
+		console.log(eq);
 	});
-
-
-
-
-
 
 });
