@@ -37,5 +37,6 @@ here's what I need to do:
 - <strike>if click left or right, go onto previous or next image</strike>
 - <strike>create counter that shows which image i'm on</strike>
 - <strike>create visual counter, e.g. blobs with current blob being different colour</strike>
-- when click on blob, take you to that image ==> do on next iteration of carousel
+- <strike>when click on blob, take you to that image</strike>
+- still looks a bit borked!
 

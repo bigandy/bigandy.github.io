@@ -116,13 +116,14 @@ $(document).ready(function() {
 
 	});// end on.click
 
+	// Slider Blobs
+    navLi.on("click", function() {
+        var current = navLi.index($(this));
+        carouselInner.css({
+            "margin-left": -imgsWidth * current
+        });
 
-	navLi.on("click", function() {
-		var $this = $(this);
-
-		var eq = $this.attr("class");
-
-		console.log(eq);
-	});
+        navLi.eq(current).addClass("current-nav").siblings().removeClass("current-nav");
+    });
 
 });
