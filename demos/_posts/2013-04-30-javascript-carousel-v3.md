@@ -26,4 +26,8 @@ css:
 		<img src="/images/hot/hot5.jpg" alt="">
 		<img src="/images/hot/hot6.jpg" alt="">
 	</div>
+	<div id="slider-nav">
+		<a href="" data-dir="prev">Prev</a>
+		<a href="" data-dir="next">Next</a>
+	</div>
 </div>
