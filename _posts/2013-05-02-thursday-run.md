@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running Tuesday
+title: Running Thursday
 published: true
 summary: Second run of the second week.
 ---
