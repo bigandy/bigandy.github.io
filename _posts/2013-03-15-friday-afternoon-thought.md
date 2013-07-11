@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Friday Afternoon Thought
 summary: Thinking out loud on a rainy Friday afternoon
 ---
