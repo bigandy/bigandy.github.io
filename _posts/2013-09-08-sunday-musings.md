@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-title: Sunday Musing
-summary: The Best Time of the Week
+title: Sunday Morning
+summary: Coffee, music, reading...best time of the week
 ---
 
 Sunday morning is most perfect time of the week. I listen to 6Music and starting at 0700-1000 is Mary Anne-Hobbes (although I a never hear all of it, I love her voice and selection of music — I first heard her when she was on Radio1 with her Breezeblock show over 15 years ago) and then is Cerys Matthews (again, beautiful - Welsh - voice over even more amazing eclectic music).
