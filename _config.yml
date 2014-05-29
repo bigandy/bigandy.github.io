@@ -2,13 +2,4 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:year/:month/:day/:title
 paginate: 10
-exclude: [
-	'node_modules',
-	'.gitignore',
-	'README.md',
-	'Gruntfile.js',
-	'bigandy.github.sublime-project',
-	'package.json',
-	'jquery.js',
-	'js/demos'
-]
+exclude: ['node_modules', '.gitignore',	'README.md', 'Gruntfile.js', 'bigandy.github.sublime-project', 'package.json', 'jquery.js',	'js/demos']
