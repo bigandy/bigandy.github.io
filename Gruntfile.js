@@ -50,34 +50,27 @@ module.exports = function(grunt) {
             }
         },
 
-        // style (Sass) compilation via Compass
-        compass: {
-            dist: {
-                options: {
-                    sassDir: 'css',
-                    cssDir: 'css',
-                    imagesDir: 'images',
-                    images: 'images',
-                    javascriptsDir: 'js/build',
-                    fontsDir: 'fonts',
-                    environment: 'production',
-                    outputStyle: 'expanded',
-                    relativeAssets: true,
-                    noLineComments: true,
-                    force: true
-                }
-            }
-        },
+		sass: {
+			dist: {
+				options: {
+					style: 'compressed',
+                    sourcemap: true
+				},
+				files: {
+					'css/style.css': 'css/style.scss'
+				}
+			}
+		},
 
         // watch our project for changes
         watch: {
-            compass: {
+            sass: {
                 files: [
                     'css/*',
                     'css/inuit.css/**/*',
                     'css/inuit/*'
                 ],
-                tasks: ['compass']
+                tasks: ['sass']
             },
             js: {
                 files: [
@@ -85,38 +78,22 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['jshint', 'uglify', 'requirejs']
             }
-        },
-
-        // require js options
-        requirejs: {
-          compile: {
-            options: {
-              baseUrl: "js/require/start/",
-              mainConfigFile: "js/require/start/main.js",
-              out: "js/require/end/optimized.js",
-              generateSourceMaps: true,
-              optimize: "uglify2",
-              preserveLicenseComments: false
-            }
-          }
         }
-
     });
 
     // load tasks
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     // register task
     grunt.registerTask('default', [
         // 'jshint',
-        'compass',
+        'sass',
         // 'uglify',
-        'watch',
-        'requirejs',
+        'watch'
     ]);
 
 };

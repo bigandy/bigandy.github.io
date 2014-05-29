@@ -2,28 +2,16 @@
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
-/**
- *
- * sass --watch style.scss:style.min.css --style compressed
- *
- * Here we pull in some variables, include the inuit.css framework, then add our
- * project-specific components afterwards.
- */
 
+%cf {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
-/**
- * Setup
- */
-@import "vars";
-@import "inuit.css/inuit";
-
-
-
-
-/**
- * She’s all yours, cap’n... Begin importing your stuff here.
- */
-//@import "ui/example";
+@import "variables";
 
 body {
     width: 95%;
@@ -33,32 +21,35 @@ body {
 
 main {
     background: white;
-    // padding: 1em 2.5%;
 }
-
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
     font-family: 'Roboto Slab', serif;
 }
 
+h1, .alpha {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.33333;
+}
 
 .page-title {
 	color: lighten(red,25%);
 }
 
-
 a {
     text-decoration: none;
-    // font-weight: normal;
 
     &:focus,
     &:hover {
     	text-decoration: underline;
     }
+
     &:hover {
         color: red;
     }
+
     &:focus {
         color: blue;
     }
@@ -85,13 +76,21 @@ pre {
     margin-top: 50px;
 }
 
-.selected, {
+%selected, {
     color: red;
 }
-.page--home .nav--home,
-.page--blog .nav--blog,
-.page--demos .nav--demos {
-    @extend .selected;
+// .page--home .nav--home,
+// .page--blog .nav--blog,
+// .page--demos .nav--demos {
+//     @extend .selected;
+// }
+
+$nav-list: home, blog, about, demos;
+
+@each $nav in $nav-list {
+    .page--#{$nav} .nav--#{$nav} {
+        @extend %selected;
+    }
 }
 
 .hidden {
@@ -112,7 +111,6 @@ body {
 
 
 @import "responsive-nav";
-
 
 /* Screens Wider than 720px */
 

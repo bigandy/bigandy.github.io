@@ -1,0 +1,27 @@
+{
+  "name": "bigandy github page",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": null,
+    "backbone-amd": null,
+    "underscore-amd": null,
+    "requirejs": null,
+    "zeptojs": "~0.1.1",
+    "320andup": "latest",
+    "yepnope": "~1.5.4"
+  },
+  "homepage": "http://bigandy.github.io",
+  "authors": [
+    "Andrew Hudson <ahudson@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ]
+}

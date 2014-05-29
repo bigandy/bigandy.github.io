@@ -1,5 +1,7 @@
 .responsive-nav {
-	@extend .cf;
+	@extend %cf;
+
+
 
     nav {
 		float: right;
@@ -8,8 +10,8 @@
 			background: red;
 			padding: 20px;
 			margin-top: 0;
-			
-			
+
+
 		}
 
         a {
@@ -20,7 +22,7 @@
             border-radius: 3px;
             vertical-align: baseline;
 
-            &:hover, 
+            &:hover,
 			&:focus {
 				color: white;
 				background: rgba(red, 0.25);
