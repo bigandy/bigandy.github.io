@@ -14,7 +14,6 @@
 @import "variables";
 
 body {
-    width: 95%;
     margin: 1em auto;
     font-family: "Open Sans", sans-serif;
 }
@@ -79,11 +78,6 @@ pre {
 %selected, {
     color: red;
 }
-// .page--home .nav--home,
-// .page--blog .nav--blog,
-// .page--demos .nav--demos {
-//     @extend .selected;
-// }
 
 $nav-list: home, blog, about, demos;
 
@@ -137,7 +131,8 @@ img {
     }
 
     .full-width {
-        width: 100%;
+        width: calc(100% - 100px);
+        margin: auto;
     }
 }
 
