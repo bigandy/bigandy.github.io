@@ -118,8 +118,9 @@ img {
     img {
         max-width: none;
         width: auto;
+        display: block;
+        margin: auto;
     }
-
 }
 
 @media screen and (min-width: 720px) {
