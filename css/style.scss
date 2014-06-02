@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "variables";
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -10,8 +11,6 @@
         clear: both;
     }
 }
-
-@import "variables";
 
 body {
     margin: 1em auto;
@@ -35,6 +34,10 @@ h1, .alpha {
 
 .page-title {
 	color: lighten(red,25%);
+}
+
+.post-content a {
+    text-decoration: underline;
 }
 
 a {
