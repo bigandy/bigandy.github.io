@@ -5,6 +5,8 @@ title: Changing File Permissions on OSX
 summary: I wanted to find out how to create a read-only file, and here's how I did it.
 ---
 
+I wanted to create a read-only template for future posts on this site (I'm using [jekyll](http://jekyllrb.com/) because of github pages integration).
+
 Using the terminal, I use [iTerm2](http://www.iterm2.com/#/section/home) because it is the dog's bollocks, type:
 
 <pre><code>chmod 0444 /path/to/file/file.md</code></pre>
