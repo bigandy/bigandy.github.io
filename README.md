@@ -1,3 +1,3 @@
 # bigandy.github.io README file
 
-Using Jekyll, following git repos of [erjjones.github.com](https://github.com/erjjones/erjjones.github.com) and [csswizardry.github.com](https://github.com/csswizardry/csswizardry.github.com)
+This is the code behind [bigandy.github.io](http://bigandy.github.io) a place where I can write posts, quickly publish demos.
