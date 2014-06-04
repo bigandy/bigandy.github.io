@@ -1,0 +1,21 @@
+{
+  "name": "bigandy.github.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bigandy/bigandy.github.io",
+  "authors": [
+    "Andrew Hudson <ahudson@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "picturefill": "~2.1.0"
+  }
+}
