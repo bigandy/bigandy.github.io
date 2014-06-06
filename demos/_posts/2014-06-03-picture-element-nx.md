@@ -12,10 +12,8 @@ So it seems as if I can add nx (1x for standard pixel density, 2x for retina or 
 
 
 <pre><code>&lt;picture&gt;
-&lt;source media="(min-width: 600px)"
-srcset="/images/picture-demo/600.jpeg 1x,
-/images/picture-demo/700.jpeg 2x,
-/images/picture-demo/800.jpeg 3x"&gt;
+&lt;source media="(min-width: 600px)" srcset="/images/picture-demo/600.jpeg 1x,
+/images/picture-demo/700.jpeg 2x, /images/picture-demo/800.jpeg 3x"&gt;
 &lt;img src="/images/picture-demo/fallback.jpeg" alt="fallback image"&gt;
 &lt;/picture&gt;</code></pre>
 
