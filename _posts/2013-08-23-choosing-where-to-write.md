@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+category: post
 title: Choosing Where to Write
 summary: Too many choices lead to indecision.
 ---

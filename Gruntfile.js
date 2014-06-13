@@ -1,6 +1,7 @@
-'use strict';
-module.exports = function(grunt) {
+/* global module */
 
+module.exports = function(grunt) {
+    'use strict';
     grunt.initConfig({
 
         // let us know if our JS is sound
@@ -57,7 +58,7 @@ module.exports = function(grunt) {
                     sourcemap: true
 				},
 				files: {
-					'css/style.css': 'css/style.scss'
+					'css/style.css': 'sass/style.scss'
 				}
 			}
 		},
@@ -66,9 +67,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: [
-                    'css/*',
-                    'css/inuit.css/**/*',
-                    'css/inuit/*'
+                    'sass/*',
                 ],
                 tasks: ['sass']
             },

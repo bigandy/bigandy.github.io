@@ -5,8 +5,7 @@ page-class: page--demos
 category: demos
 ---
     <main role="main" class="container">
-
-        {% for post in site.categories.demos offset: 0 limit: 50 %}
+        {% for post in site.categories.demos limit: 50 %}
         <div class="row">
           <article>
             <h1>
@@ -20,11 +19,6 @@ category: demos
           </article>
         </div>
         {% endfor %}
-
-
-
-
     </main>
-
 </body>
 </html>

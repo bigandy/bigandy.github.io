@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+category: post
 title: Sunday Morning
 summary: Coffee, music, reading...best time of the week
 ---

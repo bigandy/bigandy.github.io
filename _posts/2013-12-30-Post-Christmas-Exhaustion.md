@@ -1,6 +1,7 @@
 ---
 layout: post
 published: false
+category: post
 title: Plans for 2014
 summary: Here are my plans for 2014
 ---

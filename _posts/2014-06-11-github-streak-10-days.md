@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+category: post
 title: 10-day Github Streak
 summary: 10-day streak on github is nothing but for me it marked a new record.
 ---

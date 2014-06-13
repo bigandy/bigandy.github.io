@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+category: post
 title: Run to Work Friday
 summary: I ran to work this morning because we are going away this weekend and I couldn't leave my bike at work.
 ---

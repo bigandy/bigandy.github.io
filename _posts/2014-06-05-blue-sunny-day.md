@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+category: post
 title: Blue Sunny Day
 summary: Looking out of the window at an incredible blue and sunny day
 ---

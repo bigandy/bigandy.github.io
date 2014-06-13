@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+category: post
 title: Changing File Permissions on OSX
 summary: I wanted to find out how to create a read-only file, and here's how I did it.
 ---
