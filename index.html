@@ -2,10 +2,11 @@
 layout: default
 title: Andrew Hudson
 page-class: page--home
+number: 3
 ---
 <section>
 <h1>Posts</h1>
-{% for post in site.categories.post limit: 3 %}
+{% for post in site.categories.post limit: page.number %}
   <article>
     <h2>
         <a href="{{ post.url }}">
@@ -20,7 +21,7 @@ page-class: page--home
 </section>
 <section>
   <h1>Demos</h1>
-  {% for post in site.categories.demos limit: 3 %}
+  {% for post in site.categories.demos limit: page.number %}
     <article>
       <h2>
           <a href="{{ post.url }}">
