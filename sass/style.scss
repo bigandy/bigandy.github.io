@@ -1,5 +1,8 @@
 @charset "UTF-8";
+
 @import "variables";
+@import "responsive-nav";
+@import "flexbox";
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -17,13 +20,22 @@
     }
 }
 
+.container {
+    @extend %cf;
+    margin-top: 0;
+}
+
 body {
-    margin: 1em auto;
+    margin: 2rem auto 0;
     font-family: "Open Sans", sans-serif;
 }
 
 main {
     background: white;
+}
+
+.container--home {
+    @extend %flexbox;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -35,6 +47,7 @@ h1, .alpha {
     font-size: 36px;
     font-size: 2.25rem;
     line-height: 1.33333;
+    margin-top: 0;
 }
 
 .page-title {
@@ -119,7 +132,6 @@ img {
     width: 100%;
 }
 
-@import "responsive-nav";
 
 .page--home section,
 .page--home article {
@@ -129,6 +141,24 @@ img {
 .page--home section {
     padding-top: 0;
 }
+
+.btn {
+    border: 1px solid $blue;
+    padding: 1rem;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        background: $blue;
+        text-decoration: none;
+    }
+}
+
+.btn--right {
+    display: inline-block;
+    margin: 3rem auto 0;
+}
+
 
 /* Screens Wider than 720px */
 
@@ -151,12 +181,19 @@ img {
     }
 
     .page--home section {
-        width: 50%;
-        float: left;
+        @include flex(1);
+        position: relative;
+        padding-bottom: 4rem;
     }
 
-    h2 {
-        clear: both;
+    // h2 {
+    //     clear: both;
+    // }
+    //
+    .btn--right {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
     .full-width {
