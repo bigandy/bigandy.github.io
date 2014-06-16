@@ -20,20 +20,20 @@
     }
 }
 
+body {
+    position: relative;
+    margin: 2rem auto 0;
+    font-family: "Open Sans", sans-serif;
+}
+
 .container {
     @extend %cf;
     margin-top: 0;
 }
 
-body {
-    margin: 2rem auto 0;
-    font-family: "Open Sans", sans-serif;
-}
-
 main {
     background: white;
 }
-
 
 
 h1,h2,h3,h4,h5,h6 {
@@ -96,15 +96,11 @@ pre {
     margin-top: 50px;
 }
 
-%selected, {
-    color: red;
-}
-
 $nav-list: home, blog, about, demos;
 
 @each $nav in $nav-list {
     .page--#{$nav} .nav--#{$nav} {
-        @extend %selected;
+        color: red;
     }
 }
 
@@ -112,9 +108,7 @@ $nav-list: home, blog, about, demos;
     display: none;
 }
 
-body {
-    position: relative;
-}
+
 
 #overlay {
     position: absolute;
@@ -183,7 +177,6 @@ img {
     }
 
     .page--home section {
-        // @include flex(1);
         position: relative;
         padding-bottom: 4rem;
     }
