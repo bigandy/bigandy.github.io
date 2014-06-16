@@ -34,9 +34,7 @@ main {
     background: white;
 }
 
-.container--home {
-    @extend %flexbox;
-}
+
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
@@ -180,16 +178,16 @@ img {
         margin: 1em auto;
     }
 
+    .container--home {
+        @include flexbox;
+    }
+
     .page--home section {
-        @include flex(1);
+        // @include flex(1);
         position: relative;
         padding-bottom: 4rem;
     }
 
-    // h2 {
-    //     clear: both;
-    // }
-    //
     .btn--right {
         position: absolute;
         bottom: 0;
