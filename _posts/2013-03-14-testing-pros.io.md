@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-category: post
+category: blog
 title: Testing out Prose.io
 summary: Testing out prose.io to create a post.
 ---

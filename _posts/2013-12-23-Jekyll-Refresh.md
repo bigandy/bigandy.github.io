@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-category: post
+category: blog
 title: Jekyll Refresh
 summary: This is where I get back into Jekyll after three months away.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-category: post
+category: blog
 title: Running again
 summary: Last night I ran 5.5 miles, and discovered a new route
 ---

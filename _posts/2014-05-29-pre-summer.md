@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-category: post
+category: blog
 title: Pre Summer Robotics
 summary: I've only gone and bought some electronics and an arduino, let's get it on!
 ---

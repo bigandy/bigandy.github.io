@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-category: post
+category: blog
 title: World Cup Brasil 2014
 summary: Finally its here, the world cup!
 ---

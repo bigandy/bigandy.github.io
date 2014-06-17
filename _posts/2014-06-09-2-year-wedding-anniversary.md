@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-category: post
+category: blog
 title: 2-year Wedding Anniversary
 summary: Today marks 2 years since my beautiful wife Marion and I got married in Pons, France
 date: 2014-06-09 12:00:00
