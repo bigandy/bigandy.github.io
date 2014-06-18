@@ -1,2 +1,187 @@
-.responsive-nav nav{float:right}.responsive-nav nav .button{background:red;padding:20px;margin-top:0}.responsive-nav nav a{padding:10px;margin-top:10px;display:block;float:left;border-radius:3px;vertical-align:baseline}.responsive-nav nav a:hover,.responsive-nav nav a:focus{color:white;background:rgba(255,0,0,0.25)}@media screen and (max-width: 550px){.responsive-nav nav a{float:none;padding-top:0.25em;padding-bottom:0.25em;padding-left:20px;padding-right:20px;text-align:center;width:100%}}*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box}.responsive-nav:after,.container:after{content:"";display:table;clear:both}body{position:relative;margin:2rem auto 0;font-family:"Open Sans", sans-serif}header,main,footer{margin:1em}.container{margin-top:0;margin:0 1%}main{background:white}h1,h2,h3,h4,h5,h6{font-weight:normal;font-family:'Roboto Slab', serif}h1,.alpha{font-size:36px;font-size:2.25rem;line-height:1.33333;margin-top:0}.page-title{color:#ff8080}.post-content a{text-decoration:underline}a{text-decoration:none}a:focus,a:hover{text-decoration:underline}a:hover{color:red}a:focus{color:blue}nav{margin-bottom:50px}nav>a{padding:1em 1em 1em 0}code{font-family:'Source Code Pro', sans-serif}pre{background:#ccc;padding:1em;margin:0 0 1em;overflow:auto}.pagination{margin-top:50px}.page--home .nav--home{color:red}.page--blog .nav--blog{color:red}.page--about .nav--about{color:red}.page--demos .nav--demos{color:red}.hidden{display:none}#overlay{position:absolute;top:0;left:0;background:rgba(0,0,0,0.5);z-index:999999}picture,img{max-width:100%;width:100%}.page--home section,.page--home article{padding:1% 1% 1% 0}.page--home section{padding-top:0}.btn{border:1px solid #aeeeee;padding:1rem}.btn:hover,.btn:focus{color:#fff;background:#aeeeee;text-decoration:none}.btn--right{display:inline-block;margin:3rem auto 0}@media screen and (min-width: 400px){picture,img{max-width:none;width:auto;display:block;margin:auto}}@media screen and (min-width: 1020px){header,main,footer,.container{width:1000px;margin:1em auto}.page--home .container--home{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex}.page--home section{position:relative;padding-bottom:4rem}.btn--right{position:absolute;bottom:0;left:0}.full-width{width:calc(100% - 100px);margin:auto}}@media screen and (min-width: 1500px){.full-width{width:1500px}}
-/*# sourceMappingURL=style.css.map */
+.responsive-nav nav {
+  float: right; }
+  .responsive-nav nav .button {
+    background: red;
+    padding: 20px;
+    margin-top: 0; }
+  .responsive-nav nav a {
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    border-radius: 3px;
+    vertical-align: baseline; }
+    .responsive-nav nav a:hover, .responsive-nav nav a:focus {
+      color: white;
+      background: rgba(255, 0, 0, 0.25); }
+
+@media screen and (max-width: 550px) {
+  .responsive-nav nav a {
+    float: none;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    width: 100%; } }
+
+
+
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.responsive-nav:after, .container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  position: relative;
+  margin: 2rem auto 0;
+  font-family: "Open Sans", sans-serif;
+  background: orange; }
+
+header, main, footer {
+  margin: 1em; }
+
+.container {
+  margin-top: 0;
+  margin: 0 1%; }
+
+main {
+  background: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: 'Roboto Slab', serif; }
+
+h1, .alpha {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333;
+  margin-top: 0; }
+
+.page-title {
+  color: #ff8080; }
+
+.post-content a {
+  text-decoration: underline; }
+
+a {
+  text-decoration: none; }
+  a:focus, a:hover {
+    text-decoration: underline; }
+  a:hover {
+    color: red; }
+  a:focus {
+    color: blue; }
+
+nav {
+  margin-bottom: 50px; }
+  nav > a {
+    padding: 1em 1em 1em 0; }
+
+code {
+  font-family: 'Source Code Pro', sans-serif; }
+
+pre {
+  background: #cccccc;
+  padding: 1em;
+  margin: 0 0 1em;
+  overflow: auto; }
+
+.pagination {
+  margin-top: 50px; }
+
+.page--home .nav--home {
+  color: red; }
+
+.page--blog .nav--blog {
+  color: red; }
+
+.page--about .nav--about {
+  color: red; }
+
+.page--demos .nav--demos {
+  color: red; }
+
+.hidden {
+  display: none; }
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999999; }
+
+picture, img {
+  max-width: 100%;
+  width: 100%; }
+
+.page--home section, .page--home article {
+  padding: 1% 1% 1% 0; }
+
+.page--home section {
+  padding-top: 0; }
+  .page--home section + section {
+    margin-top: 0rem; }
+
+.btn {
+  border: 1px solid #AEEEEE;
+  padding: 1rem; }
+  .btn:hover, .btn:focus {
+    color: #FFFFFF;
+    background: #AEEEEE;
+    text-decoration: none; }
+
+.btn--right {
+  display: inline-block;
+  margin: 3rem auto 0; }
+
+/* Media Queries */
+@media screen and (min-width: 400px) {
+  picture, img {
+    max-width: none;
+    width: auto;
+    display: block;
+    margin: auto; } }
+
+@media screen and (max-width: 550px) {
+  .responsive-nav nav a {
+    float: none;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    width: 100%; } }
+
+@media screen and (min-width: 1020px) {
+  header, main, footer, .container {
+    width: 1000px;
+    margin: 1em auto; }
+  .page--home .container--home {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .page--home section {
+    position: relative;
+    padding-bottom: 4rem; }
+  .btn--right {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .full-width {
+    width: calc(100% - 100px);
+    margin: auto; } }
+
+@media screen and (min-width: 1500px) {
+  .full-width {
+    width: 1500px; } }
