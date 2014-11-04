@@ -4,7 +4,7 @@ title: Require JS with Bower
 published: true
 summary: Trying out another requirejs tutorial
 category: demos
-custom-script: [<script src="/js/libs/requirejs/require.js" data-main="/js/main2"></script>]
+custom-script: [<script src="/bower_components/requirejs/require.js" data-main="/js/main2"></script>]
 ---
 
 # main title

@@ -1,6 +1,6 @@
 {
   "name": "bigandy.github.com",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/bigandy/bigandy.github.io",
   "authors": [
     "Andrew Hudson <ahudson@gmail.com>"
@@ -11,11 +11,13 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "js/libs",
     "test",
     "tests"
   ],
   "dependencies": {
     "picturefill": "~2.1.0"
+  },
+  "devDependencies": {
+    "normalize-scss": "~3.0.1"
   }
 }

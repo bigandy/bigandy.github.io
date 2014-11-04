@@ -5,7 +5,7 @@ published: true
 summary: Now that I've covered picture element, I'll move to srcset and sizes attributes
 category: demos
 post-class: full-width
-custom-script: [<script src="/js/libs/picturefill/dist/picturefill.min.js" async></script>]
+custom-script: [<script src="/bower_components/picturefill/dist/picturefill.min.js" async></script>]
 ---
 
 ## 1x, 2x, 3x...

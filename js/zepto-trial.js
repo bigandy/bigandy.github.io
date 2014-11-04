@@ -2,8 +2,8 @@
 
 yepnope({
   test: navigator.appName.match(/Explorer/), // IE?
-  yep: '/js/libs/jquery/jquery.min.js',
-  nope: '/js/libs/zeptojs/zepto.min.js',
+  yep: '/bower_components/jquery/jquery.min.js',
+  nope: '/bower_components/zeptojs/zepto.min.js',
   callback: function() {
   		Zepto(function($){
 
