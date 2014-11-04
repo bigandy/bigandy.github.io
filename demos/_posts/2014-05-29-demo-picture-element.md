@@ -1,6 +1,6 @@
 ---
 layout: post-demos
-title: picture element and Picturefill Demo
+title: Picture element and Picturefill Demo
 published: true
 summary: Testing out picturefill and picture element
 category: demos

@@ -35,22 +35,25 @@ body {
     }
 }
 
-h2 {
-    display: inline-block;
-    width: 80%;
-    margin: 0;
+
+
+header {
+    .post__meta {
+        display: inline-block;
+        position: relative;
+        bottom: 4px;
+    }
+
+    h2 {
+        display: inline;
+        margin: 0;
+    }
 }
 
 .post__meta {
-    display: inline-block;
-
     li {
         color: gray;
         font-size: 75%;
-    }
-
-    + p {
-        clear: both;
     }
 }
 
