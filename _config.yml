@@ -12,3 +12,5 @@ exclude: [
  'jquery.js',
  'js/demos'
  ]
+sass:
+ style: :compressed

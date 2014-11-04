@@ -54,11 +54,12 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'compressed',
-                    sourcemap: true
-				},
+                    style: 'compressed',
+                    trace: true,
+                    debugInfo: false,
+                },
 				files: {
-					'css/style.css': 'sass/style.scss'
+					'css/style.css': '_sass/style.scss'
 				}
 			}
 		},
@@ -67,7 +68,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: [
-                    'sass/*',
+                    '_sass/*',
                 ],
                 tasks: ['sass']
             },
