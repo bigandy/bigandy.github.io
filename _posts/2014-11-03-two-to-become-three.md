@@ -4,6 +4,7 @@ published: true
 category: blog
 title: Two to Become Three
 summary: Marion is pregnant with our first child.
+post_id: 17
 ---
 
 This is where I announce that my wife is pregnant with our first child.

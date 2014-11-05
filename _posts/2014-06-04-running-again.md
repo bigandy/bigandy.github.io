@@ -4,6 +4,7 @@ published: true
 category: blog
 title: Running again
 summary: Last night I ran 5.5 miles, and discovered a new route
+post_id: 8
 ---
 
 I've been meaning to re-start running since I stopped in February, and since reading a [running book](http://www.amazon.co.uk/dp/B008BTC5E6/), and an [excellent new running magazine](http://www.likethewindmagazine.com/), I found my running kit and desire to go out running<sup>*</sup>.

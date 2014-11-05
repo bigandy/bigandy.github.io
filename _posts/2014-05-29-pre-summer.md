@@ -4,6 +4,7 @@ published: true
 category: blog
 title: Pre Summer Robotics
 summary: I've only gone and bought some electronics and an arduino, let's get it on!
+post_id: 6
 ---
 
 Inspired by the excellent jQuery UK 2014 talk about "Hardware Hacking with JavaScript" I ordered an arduino starter kit: leds, resistors, motor, servo, capacitors and much more. I am learning the basics, using the johnny-five node.js framework.

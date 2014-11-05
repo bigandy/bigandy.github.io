@@ -4,6 +4,7 @@ published: true
 category: blog
 title: Run to Work Friday
 summary: I ran to work this morning because we are going away this weekend and I couldn't leave my bike at work.
+post_id: 10
 ---
 
 Huh, what is this, two runs in one week? Crazy!

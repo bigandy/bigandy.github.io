@@ -11,6 +11,25 @@
     }
 }
 
+.post {
+    .post-content,
+    .post__meta li {
+        color: $white;
+    }
+}
+
+.post--even {
+    background: hsla(97, 52%, 47%, 1);
+}
+
+.post--odd {
+    background: hsla(30, 100%, 50%, 1);
+
+    .page-title {
+        color: $black;
+    }
+}
+
 body {
     position: relative;
     margin: 2rem auto 0;
@@ -34,8 +53,6 @@ body {
         padding-right: 5px;
     }
 }
-
-
 
 header {
     .post__meta {
@@ -69,9 +86,9 @@ footer {
     margin: 0 1%;
 }
 
-main {
-    background: white;
-}
+// main {
+//     background: white;
+// }
 
 
 h1,h2,h3,h4,h5,h6 {

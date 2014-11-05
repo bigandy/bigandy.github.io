@@ -4,6 +4,7 @@ published: true
 category: blog
 title: Blue Sunny Day
 summary: Looking out of the window at an incredible blue and sunny day
+post_id: 9
 ---
 Looking out of the window I can see an excellent early-summer day with blue skies and white fluffy clouds slowly moving across the scene. I soon will be outside, eating my homemade sandwich on a bench and read my current book on the Kindle app on my phone.
 
