@@ -15,7 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "picturefill": "~2.1.0"
+    "picturefill": "~2.1.0",
+    "normalize-scss": "~3.0.2"
   },
   "devDependencies": {
     "normalize-scss": "~3.0.1"
