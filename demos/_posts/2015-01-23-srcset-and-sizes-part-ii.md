@@ -5,7 +5,7 @@ published: true
 summary: Second Demo getting my head around the srcset and sizes syntax
 category: demos
 post-class: full-width
-custom-script: [<script src="/bower_components/picturefill/dist/picturefill.min.js" async></script>]
+custom-script: [<script src="/js/libs/picturefill.min.js" async></script>]
 ---
 
 <pre><code>&lt;img

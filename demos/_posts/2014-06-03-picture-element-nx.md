@@ -5,7 +5,7 @@ published: true
 summary: Trying out other aspects of picture element
 category: demos
 post-class: full-width
-custom-script: [<script src="/bower_components/picturefill/dist/picturefill.min.js" async></script>]
+custom-script: [<script src="/js/libs/picturefill.min.js" async></script>]
 ---
 
 So it seems as if I can add nx (1x for standard pixel density, 2x for retina or double, 3x and so on for higher pixel density screens). Here is the code to swap out one image for another when on 2x or 3x devices:

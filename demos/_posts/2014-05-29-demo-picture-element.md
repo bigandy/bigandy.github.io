@@ -5,7 +5,7 @@ published: true
 summary: Testing out picturefill and picture element
 category: demos
 post-class: full-width
-custom-script: [<script src="/bower_components/picturefill/dist/picturefill.min.js" async></script>]
+custom-script: [<script src="/js/libs/picturefill.min.js" async></script>]
 ---
 
 <picture>
