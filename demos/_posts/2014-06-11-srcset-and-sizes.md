@@ -14,7 +14,9 @@ Use the 2x component of srcset.
 
 <img src="images/picture-demo/fallback.jpeg"
 srcset="/images/picture-demo/400x400.jpeg 1x,
-/images/picture-demo/800x800.jpeg 2x"
+/images/picture-demo/800x800.jpeg 2x,
+/images/picture-demo/1200.jpeg 3x,
+/images/picture-demo/1600.jpeg 4x"
 sizes=""
 alt="Some alternate text"
 />
