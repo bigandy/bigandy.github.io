@@ -8,9 +8,11 @@ post-class: full-width
 custom-script: [<script src="/js/libs/picturefill.min.js" async></script>]
 ---
 
-## 1x, 2x, 3x...
+## 1x, 2x, 3x, 4x...
 Want to show a different image to retina screens?
 Use the 2x component of srcset.
+
+It turns out that my phone (Nexus 6) is 4x.
 
 <pre><code>&lt;img src="images/picture-demo/fallback.jpeg"
 srcset="/images/picture-demo/400x400.jpeg 1x,
