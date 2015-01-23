@@ -12,6 +12,16 @@ custom-script: [<script src="/js/libs/picturefill.min.js" async></script>]
 Want to show a different image to retina screens?
 Use the 2x component of srcset.
 
+<pre><code>&lt;img src="images/picture-demo/fallback.jpeg"
+srcset="/images/picture-demo/400x400.jpeg 1x,
+/images/picture-demo/800x800.jpeg 2x,
+/images/picture-demo/1200.jpeg 3x,
+/images/picture-demo/1600.jpeg 4x"
+sizes=""
+alt="Some alternate text"
+/&gt;</code></pre>
+
+
 <img src="images/picture-demo/fallback.jpeg"
 srcset="/images/picture-demo/400x400.jpeg 1x,
 /images/picture-demo/800x800.jpeg 2x,
