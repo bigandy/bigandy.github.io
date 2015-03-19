@@ -15,10 +15,6 @@ page-class: ['page--running']
         {{ content }}
     </div>
     <p>
-        {% if page.monday %}
-            Here is what I did on Monday: {{ page.monday }}
-        {% endif %}
-
         {% if page.embed %}
             <div class="post__embed">
                 {{ page.embed }}

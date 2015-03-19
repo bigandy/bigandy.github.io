@@ -1,0 +1,18 @@
+.list--running {
+	margin-top: .5rem;
+	margin-left: .5rem;
+	float: left;
+}
+
+.running__article {
+	margin-bottom: 1rem;
+
+	header {
+		@extend %cf;
+		margin-bottom: 1rem;
+	}
+
+	h2 {
+		float: left;
+	}
+}
