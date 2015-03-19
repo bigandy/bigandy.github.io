@@ -1,5 +1,4 @@
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -151,7 +150,7 @@ pre {
     margin-top: 50px;
 }
 
-$nav-list: home, blog, about, demos;
+$nav-list: home, blog, about, demos, running;
 
 @each $nav in $nav-list {
     .page--#{$nav} .nav--#{$nav} {
@@ -212,4 +211,8 @@ img {
             max-width: 100%;
         }
     }
+}
+
+.post__embed {
+    margin-top: 3rem;
 }

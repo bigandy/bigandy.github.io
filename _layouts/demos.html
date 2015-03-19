@@ -1,13 +1,13 @@
 {% include demos-head.html %}
 
 {% include header.html %}
-	    <main role="main" class="container {{ page.post-class }}">
-	        {{ content }}
-	    </main>
+		<main role="main" class="container {{ page.post-class }}">
+			{{ content }}
+		</main>
 		{% if page.script %}
-	    {% for item in page.script %}
-	    <script src="/js/{{ item }}"></script>{% endfor %}
-	    {% endif %}
-	    {% if page.custom-script %}{{ page.custom-script }}{% endif %}
+		{% for item in page.script %}
+		<script src="/js/{{ item }}"></script>{% endfor %}
+		{% endif %}
+		{% if page.custom-script %}{{ page.custom-script }}{% endif %}
 
-	    {% include foot.html %}
+		{% include foot.html %}

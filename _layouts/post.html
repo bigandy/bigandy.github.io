@@ -11,13 +11,19 @@ page-class: page--blog
             {{ page.title }}
         </h1>
     </header>
-	<div class="post-content">
-		{{ content }}
-	</div>
+    <div class="post-content">
+        {{ content }}
+
+        <p>
+            {% if page.monday %}
+                Here is what I did on Monday: {{ page.monday }}
+            {% endif %}
+        </p>
+    </div>
 </article>
 <nav class="pagination">
-	{% if page.previous.url %}<a href="{{ page.previous.url }}">Previous Post</a>{% endif %}
-	{% if page.next.url %}<a href="{{ page.next.url }}">Next Post</a>{% endif %}
+    {% if page.previous.url %}<a href="{{ page.previous.url }}">Previous Post</a>{% endif %}
+    {% if page.next.url %}<a href="{{ page.next.url }}">Next Post</a>{% endif %}
 </nav>
 
 
