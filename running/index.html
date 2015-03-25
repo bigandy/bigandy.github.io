@@ -13,11 +13,13 @@ category: running
   <article class="running__article">
     <header>
         <h2>
+          <a href="{{ post.url }}">
             {% if post.route %}
                 {{ post.route }}
             {% else %}
                 {{ post.title }}
             {% endif %}
+          </a>
         </h2>
         <ul class="list--plain list--running">
             <li>{{ post.date | date_to_string }}</li>
@@ -29,14 +31,17 @@ category: running
         {{ post.summary }}
     {% endif %}
     <ul class="list--plain">
-      {% if post.route %}
-          <li><strong>Route: </strong>{{ post.route }}</li>
-      {% endif %}
       {% if post.distance %}
           <li><strong>Distance: </strong>{{ post.distance }} miles</li>
       {% endif %}
       {% if post.time %}
           <li><strong>Time: </strong>{{ post.time }}</li>
+      {% endif %}
+      {% if post.pace %}
+          <li><strong>Pace: </strong>{{ post.pace }} / mile</li>
+      {% endif %}
+      {% if post.enjoyment %}
+          <li><strong>Suffer score: </strong>{{ post.enjoyment }}0%</li>
       {% endif %}
     </ul>
   </article>

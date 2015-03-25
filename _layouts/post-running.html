@@ -4,9 +4,12 @@ page-class: ['page--running']
 ---
 
 <article class="content">
-
     <h1 class="page-title">
-        {{ page.title }}
+        {% if page.route %}
+            {{ page.route }}
+        {% else %}
+            {{ page.title }}
+        {% endif %}
     </h1>
     <ul class="list--plain post__meta">
         <li>{{ page.date | date_to_string }}</li>
@@ -14,13 +17,28 @@ page-class: ['page--running']
     <div class="post-content">
         {{ content }}
     </div>
-    <p>
-        {% if page.embed %}
-            <div class="post__embed">
-                {{ page.embed }}
-            </div>
+    <ul class="list--plain">
+        {% if page.route %}
+            <li><strong>Route: </strong>{{ page.route }}</li>
         {% endif %}
-    </p>
+        {% if page.distance %}
+            <li><strong>Distance: </strong>{{ page.distance }} miles</li>
+        {% endif %}
+        {% if page.time %}
+            <li><strong>Time: </strong>{{ page.time }}</li>
+        {% endif %}
+        {% if page.pace %}
+            <li><strong>Pace: </strong>{{ page.pace }} / mile</li>
+        {% endif %}
+        {% if page.enjoyment %}
+            <li><strong>Suffer score: </strong>{{ page.enjoyment }}0%</li>
+        {% endif %}
+    </ul>
+    {% if page.embed %}
+        <div class="post__embed">
+            {{ page.embed }}
+        </div>
+    {% endif %}
 </article>
 
 

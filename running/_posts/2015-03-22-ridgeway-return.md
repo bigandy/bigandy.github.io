@@ -7,6 +7,7 @@ summary: Lovely warm sunny spring morning while Marion walked with Arthur
 route: 'Ridgeway East - there and Back'
 time: '41:06'
 distance: '4.7'
+pace: '8:48'
 enjoyment: 4
 embed: <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/272275205/embed/6910bf50dd03ef071c32b84f8ff5bafa4ee7e5c8'></iframe>
 ---
