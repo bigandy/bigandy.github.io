@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-importScripts('js/vendor/serviceworker-cache-polyfill.js');
+importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
 var cacheName = 'bigandy.github.io-cache-v1';
 var filesToCache = [
