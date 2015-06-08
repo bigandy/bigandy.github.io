@@ -12,5 +12,6 @@ exclude: [
  'jquery.js',
  'js/demos'
  ]
+site_url: "https://bigandy.github.io"
 sass:
  style: :compressed
