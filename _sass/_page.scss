@@ -85,13 +85,13 @@ footer {
     margin: 0 1%;
 }
 
-// main {
-//     background: white;
-// }
-
-
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
     font-family: $roboto;
 }
 
@@ -103,7 +103,7 @@ h1,
 }
 
 .page-title {
-    color: lighten(red,25%);
+    color: lighten($red, 25%);
 }
 
 .post-content a {
@@ -119,7 +119,7 @@ a {
     }
 
     &:hover {
-        color: red;
+        color: $red;
     }
 
     &:focus {
@@ -166,7 +166,7 @@ $nav-list: home, blog, about, demos, running;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(black, 0.5);
+    background: rgba($black, .5);
     z-index: 999999;
 }
 

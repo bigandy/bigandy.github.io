@@ -9,15 +9,15 @@ category: demos
     <div class="row">
       <article>
         <header>
-                <ul class="list--plain post__meta">
-                    <li>{{ post.date | date_to_string }}</li>
-                </ul>
-                <h2>
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h2>
-            </header>
+            <ul class="list--plain post__meta">
+                <li>{{ post.date | date_to_string }}</li>
+            </ul>
+            <h2>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+        </header>
         <p>
           {{ post.summary }}
         </p>

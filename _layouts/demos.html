@@ -1,6 +1,5 @@
 {% include demos-head.html %}
 
-{% include header.html %}
 		<main role="main" class="container {{ page.post-class }}">
 			{{ content }}
 		</main>
@@ -9,5 +8,6 @@
 		<script src="/js/{{ item }}"></script>{% endfor %}
 		{% endif %}
 		{% if page.custom-script %}{{ page.custom-script }}{% endif %}
+
 
 		{% include foot.html %}
