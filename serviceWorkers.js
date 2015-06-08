@@ -8,14 +8,14 @@ console.log('hello Worlds!');
 var cacheName = 'bigandy-cache-v2';
 var filesToCache = [
     // Stylesheets
-    '/css/style.css',
-    '/css/font.css',
+    '{{site.url}}/css/style.css',
+    '{{site.url}}/css/font.css',
 
     // Posts
     {% for post in site.posts %}
-    "{{ post.url }}", {% endfor %}
+    "{{site.url}}{{ post.url }}", {% endfor %}
 
-    {% for page in site.pages %}'{{ page.url }}',
+    {% for page in site.pages %}'{{site.url}}{{ page.url }}',
     {% endfor %}
 ];
 
