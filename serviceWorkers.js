@@ -1,11 +1,11 @@
 ---
 layout: null
 ---
-importScripts('..vendor/serviceworker-cache-polyfill.js');
+importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-alert('hello Worlds!');
+console.log('hello Worlds!');
 
-var cacheName = 'bigandy-cache-v1';
+var cacheName = 'bigandy-cache-v2';
 var filesToCache = [
     // Stylesheets
     '/css/style.css',
@@ -21,10 +21,9 @@ var filesToCache = [
 
 
 self.addEventListener('install', function(event) {
-    console.log('installing');
     event.waitUntil(
-        console.log('yeha');
         caches.open(cacheName).then(function(cache) {
+            console.log('caching files');
             return cache.addAll(filesToCache);
         })
     );
@@ -32,9 +31,6 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', function(event) {
     var requestUrl = new URL(event.request.url);
-
-    console.log(requestUrl);
-
     if (requestUrl.host == 'fonts.gstatic.com') {
         // event.respondWith(
         //     caches.open('eduardoboucas.com-fonts')
@@ -65,8 +61,9 @@ self.addEventListener('fetch', function(event) {
                     }
 
                     // Redirecting /blog to /blog/index.html
-                    if ((requestUrl.pathname == '/blog') || (requestUrl.pathname == '/blog/')) {
-                        return fetch('/blog/index.html');
+                    if ((requestUrl.pathname === '/about') || (requestUrl.pathname === '/about/')) {
+                        console.log('uh oh');
+                        return fetch('/about/index.html');
                     }
 
                     console.log('* [Fetching]: ' + event.request.url);

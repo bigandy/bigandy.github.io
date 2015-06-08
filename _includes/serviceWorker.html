@@ -1,11 +1,12 @@
 <script>
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/js/serviceWorker.js')
-			.then(function(registration) {
-				console.log('ServiceWorker registration successful');
-			})
-			.catch(function(err) {
-				console.log('ServiceWorker registration failed: ', err);
-			});
-	}
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('/serviceWorkers.js')
+
+		.then(function(registration) {
+			console.log('ServiceWorker registration successful');
+		})
+		.catch(function(err) {
+			console.log('ServiceWorker registration failed: ', err);
+		});
+}
 </script>

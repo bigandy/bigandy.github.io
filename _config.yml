@@ -12,7 +12,7 @@ exclude: [
  'jquery.js',
  'js/demos'
  ]
-enforce_ssl: "bigandy.github.io"
-baseurl: "https://bigandy.github.io"
+# enforce_ssl: "bigandy.github.io"
+# baseurl: "https://bigandy.github.io/"
 sass:
  style: :compressed
