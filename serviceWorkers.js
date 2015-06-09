@@ -1,11 +1,11 @@
 ---
 layout: null
 ---
-importScripts('js/vendor/serviceworker-cache-polyfill.js');
+importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
-var cacheName = 'bigandy-cache-v4';
+var cacheName = 'bigandy-cache-v5';
 var filesToCache = [
     // Stylesheets
     '{{site.url}}/css/style.css',
@@ -39,8 +39,6 @@ self.addEventListener('fetch', function(event) {
                     console.log('* [Serving cached]: ' + event.request.url);
                     return match;
                 }
-
-                console.log(requestUrl.pathname);
 
                 // Redirecting /about to /about/index.html
                 if ((requestUrl.pathname === '{{site.url}}/about') || (requestUrl.pathname === '{{site.url}}/about/')) {
