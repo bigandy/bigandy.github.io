@@ -2,7 +2,6 @@
 _site/
 
 bower_components
-
 .DS_Store
 *.sublime-*
 node_modules
