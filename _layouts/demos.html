@@ -4,7 +4,7 @@
 		</main>
 		{% if page.script %}
 		{% for item in page.script %}
-		<script src="{{site.baseurl}}/js/{{ item }}"></script>{% endfor %}
+		<script src="{{site.url}}/js/{{ item }}"></script>{% endfor %}
 		{% endif %}
 		{% if page.custom-script %}{{ page.custom-script }}{% endif %}
 

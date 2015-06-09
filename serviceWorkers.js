@@ -1,21 +1,21 @@
 ---
 layout: null
 ---
-importScripts('{{site.baseurl}}/js/vendor/serviceworker-cache-polyfill.js');
+importScripts('{{site.url}}/js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
 var cacheName = 'bigandy-cache-v3';
 var filesToCache = [
     // Stylesheets
-    '{{site.baseurl}}/css/style.css',
-    '{{site.baseurl}}/css/font.css',
+    '{{site.url}}/css/style.css',
+    '{{site.url}}/css/font.css',
 
     // Posts
     {% for post in site.posts %}
-    "{{site.baseurl}}{{ post.url }}", {% endfor %}
+    "{{site.url}}{{ post.url }}", {% endfor %}
 
-    {% for page in site.pages %}'{{site.baseurl}}{{ page.url }}',
+    {% for page in site.pages %}'{{site.url}}{{ page.url }}',
     {% endfor %}
 ];
 
@@ -41,18 +41,18 @@ self.addEventListener('fetch', function(event) {
                 }
 
                 // Redirecting /about to /about/index.html
-                if ((requestUrl.pathname === '{{site.baseurl}}/about') || (requestUrl.pathname === '{{site.baseurl}}/about/')) {
-                    return fetch('{{site.baseurl}}/about/index.html');
+                if ((requestUrl.pathname === '{{site.url}}/about') || (requestUrl.pathname === '{{site.url}}/about/')) {
+                    return fetch('{{site.url}}/about/index.html');
                 }
 
                 // Redirecting /blog to /blog/index.html
-                if ((requestUrl.pathname === '{{site.baseurl}}/blog') || (requestUrl.pathname === '{{site.baseurl}}/blog/')) {
-                    return fetch('{{site.baseurl}}/blog/index.html');
+                if ((requestUrl.pathname === '{{site.url}}/blog') || (requestUrl.pathname === '{{site.url}}/blog/')) {
+                    return fetch('{{site.url}}/blog/index.html');
                 }
 
                 // Redirecting /demos to /demos/index.html
-                if ((requestUrl.pathname === '{{site.baseurl}}/demos') || (requestUrl.pathname === '{{site.baseurl}}/demos/')) {
-                    return fetch('{{site.baseurl}}/demos/index.html');
+                if ((requestUrl.pathname === '{{site.url}}/demos') || (requestUrl.pathname === '{{site.url}}/demos/')) {
+                    return fetch('{{site.url}}/demos/index.html');
                 }
 
                 console.log('* [Fetching]: ' + event.request.url);
