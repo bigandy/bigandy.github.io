@@ -5,7 +5,7 @@ importScripts('{{site.baseurl}}/js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
-var cacheName = 'bigandy-cache-v2';
+var cacheName = 'bigandy-cache-v3';
 var filesToCache = [
     // Stylesheets
     '{{site.baseurl}}/css/style.css',
