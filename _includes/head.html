@@ -13,13 +13,6 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet" />
-    {% if site.enforce_ssl %}
-      <script type="text/javascript">
-        var enforce = "{{ site.enforce_ssl }}";
-        if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-          window.location = window.location.toString().replace(/^http:/, "https:");
-      </script>
-      {% endif %}
   </head>
 <body class="page {{ page.page-class }}">
   <header class="header">
