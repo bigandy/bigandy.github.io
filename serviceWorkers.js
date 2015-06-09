@@ -8,14 +8,14 @@ console.log('hello Worlds!');
 var cacheName = 'bigandy-cache-v5';
 var filesToCache = [
     // Stylesheets
-    '{{site.url}}/css/style.css',
-    '{{site.url}}/css/font.css',
+    '/css/style.css',
+    '/css/font.css',
 
     // Posts
     {% for post in site.posts %}
-    "{{site.url}}{{ post.url }}", {% endfor %}
+    "{{ post.url }}", {% endfor %}
 
-    {% for page in site.pages %}'{{site.url}}{{ page.url }}',
+    {% for page in site.pages %}'{{ page.url }}',
     {% endfor %}
 ];
 
@@ -41,18 +41,18 @@ self.addEventListener('fetch', function(event) {
                 }
 
                 // Redirecting /about to /about/index.html
-                if ((requestUrl.pathname === '{{site.url}}/about') || (requestUrl.pathname === '{{site.url}}/about/')) {
-                    return fetch('{{site.url}}/about/index.html');
+                if ((requestUrl.pathname === '/about') || (requestUrl.pathname === '/about/')) {
+                    return fetch('/about/index.html');
                 }
 
                 // Redirecting /blog to /blog/index.html
-                if ((requestUrl.pathname === '{{site.url}}/blog') || (requestUrl.pathname === '{{site.url}}/blog/')) {
-                    return fetch('{{site.url}}/blog/index.html');
+                if ((requestUrl.pathname === '/blog') || (requestUrl.pathname === '/blog/')) {
+                    return fetch('/blog/index.html');
                 }
 
                 // Redirecting /demos to /demos/index.html
-                if ((requestUrl.pathname === '{{site.url}}/demos') || (requestUrl.pathname === '{{site.url}}/demos/')) {
-                    return fetch('{{site.url}}/demos/index.html');
+                if ((requestUrl.pathname === '/demos') || (requestUrl.pathname === '/demos/')) {
+                    return fetch('/demos/index.html');
                 }
 
                 console.log('* [Fetching]: ' + event.request.url);
