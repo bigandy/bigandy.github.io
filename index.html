@@ -13,7 +13,7 @@ posts-number: 5
             <li>{{ post.date | date_to_string }}</li>
         </ul>
         <h2>
-            <a href="{{ post.url }}">
+            <a href="{{site.baseurl}}{{ post.url }}">
               {{ post.title }}
             </a>
         </h2>
@@ -23,7 +23,7 @@ posts-number: 5
       </p>
     </article>
   {% endfor %}
-  <a href="/blog/" class="btn btn--right">Read more in the blog &rarr;</a>
+  <a href="{{site.baseurl}}/blog/" class="btn btn--right">Read more in the blog &rarr;</a>
 </section>
 <section>
   <h1>Demos</h1>
@@ -34,7 +34,7 @@ posts-number: 5
             <li>{{ post.date | date_to_string }}</li>
         </ul>
         <h2>
-            <a href="{{ post.url }}">
+            <a href="{{site.baseurl}}{{ post.url }}">
               {{ post.title }}
             </a>
         </h2>
@@ -44,6 +44,6 @@ posts-number: 5
       </p>
     </article>
   {% endfor %}
-  <a href="/demos/" class="btn btn--right">See more demos &rarr;</a>
+  <a href="{{site.baseurl}}/demos/" class="btn btn--right">See more demos &rarr;</a>
 </section>
 

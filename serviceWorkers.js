@@ -1,21 +1,21 @@
 ---
 layout: null
 ---
-importScripts('/js/vendor/serviceworker-cache-polyfill.js');
+importScripts('{{site.baseurl}}/js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
 var cacheName = 'bigandy-cache-v2';
 var filesToCache = [
     // Stylesheets
-    '/css/style.css',
-    '/css/font.css',
+    '{{site.baseurl}}/css/style.css',
+    '{{site.baseurl}}/css/font.css',
 
     // Posts
     {% for post in site.posts %}
-    "{{ post.url }}", {% endfor %}
+    "{{site.baseurl}}{{ post.url }}", {% endfor %}
 
-    {% for page in site.pages %}'{{ page.url }}',
+    {% for page in site.pages %}'{{site.baseurl}}{{ page.url }}',
     {% endfor %}
 ];
 
@@ -40,9 +40,19 @@ self.addEventListener('fetch', function(event) {
                     return match;
                 }
 
+                // Redirecting /about to /about/index.html
+                if ((requestUrl.pathname === '{{site.baseurl}}/about') || (requestUrl.pathname === '{{site.baseurl}}/about/')) {
+                    return fetch('{{site.baseurl}}/about/index.html');
+                }
+
                 // Redirecting /blog to /blog/index.html
-                if ((requestUrl.pathname === '/about') || (requestUrl.pathname === '/about/')) {
-                    return fetch('/about/index.html');
+                if ((requestUrl.pathname === '{{site.baseurl}}/blog') || (requestUrl.pathname === '{{site.baseurl}}/blog/')) {
+                    return fetch('{{site.baseurl}}/blog/index.html');
+                }
+
+                // Redirecting /demos to /demos/index.html
+                if ((requestUrl.pathname === '{{site.baseurl}}/demos') || (requestUrl.pathname === '{{site.baseurl}}/demos/')) {
+                    return fetch('{{site.baseurl}}/demos/index.html');
                 }
 
                 console.log('* [Fetching]: ' + event.request.url);

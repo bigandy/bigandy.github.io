@@ -1,4 +1,5 @@
 url: https://bigandy.github.io
+# baseurl: "/static"
 markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title
