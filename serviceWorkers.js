@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-importScripts('{{site.url}}/js/vendor/serviceworker-cache-polyfill.js');
+importScripts('js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
@@ -39,6 +39,8 @@ self.addEventListener('fetch', function(event) {
                     console.log('* [Serving cached]: ' + event.request.url);
                     return match;
                 }
+
+                console.log(requestUrl.pathname);
 
                 // Redirecting /about to /about/index.html
                 if ((requestUrl.pathname === '{{site.url}}/about') || (requestUrl.pathname === '{{site.url}}/about/')) {
