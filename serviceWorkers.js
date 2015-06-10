@@ -5,16 +5,16 @@ importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
-var cacheName = 'bigandy-cache-v9';
+var cacheName = 'bigandy-cache-v10';
 var filesToCache = [
     // Stylesheets
     '/css/style.css',
     '/css/font.css',
-    'favicon.ico',
+    '/favicon.ico',
 
     // Posts
     {% for post in site.posts %}
-    "{{ post.url }}", {% endfor %}
+    "{{ post.url }}/index.html", {% endfor %}
 
     {% for page in site.pages %}'{{ page.url }}',
     {% endfor %}
