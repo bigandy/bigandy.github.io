@@ -10,6 +10,7 @@ var filesToCache = [
     // Stylesheets
     '/css/style.css',
     '/css/font.css',
+    'favicon.ico',
 
     // Posts
     {% for post in site.posts %}
