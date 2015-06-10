@@ -14,7 +14,7 @@ var filesToCache = [
 
     // Posts
     {% for post in site.posts %}
-    "{{ post.url }}/index.html", {% endfor %}
+    "{{ post.url }}", {% endfor %}
 
     {% for page in site.pages %}'{{ page.url }}',
     {% endfor %}
@@ -42,17 +42,20 @@ self.addEventListener('fetch', function(event) {
                 }
 
                 // Redirecting /about to /about/index.html
-                if ((requestUrl.pathname === '/about') || (requestUrl.pathname === '/about/')) {
+                if ((requestUrl.pathname == '/about') || (requestUrl.pathname === '/about/')) {
+                    console.log('success!');
                     return fetch('/about/index.html');
                 }
 
                 // Redirecting /blog to /blog/index.html
-                if ((requestUrl.pathname === '/blog') || (requestUrl.pathname === '/blog/')) {
+                if ((requestUrl.pathname == '/blog') || (requestUrl.pathname === '/blog/')) {
+                    console.log('success!');
                     return fetch('/blog/index.html');
                 }
 
                 // Redirecting /demos to /demos/index.html
-                if ((requestUrl.pathname === '/demos') || (requestUrl.pathname === '/demos/')) {
+                if ((requestUrl.pathname == '/demos') || (requestUrl.pathname === '/demos/')) {
+                    console.log('success!');
                     return fetch('/demos/index.html');
                 }
 
