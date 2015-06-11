@@ -5,12 +5,12 @@ importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
 console.log('hello Worlds!');
 
-var cacheName = 'bigandy-cache-v8';
+var cacheName = 'bigandy-cache-v11';
 var filesToCache = [
     // Stylesheets
     '/css/style.css',
     '/css/font.css',
-    'favicon.ico',
+    '/favicon.ico',
 
     // Posts
     {% for post in site.posts %}
@@ -42,17 +42,20 @@ self.addEventListener('fetch', function(event) {
                 }
 
                 // Redirecting /about to /about/index.html
-                if ((requestUrl.pathname === '/about') || (requestUrl.pathname === '/about/')) {
+                if ((requestUrl.pathname == '/about') || (requestUrl.pathname === '/about/')) {
+                    console.log('success!');
                     return fetch('/about/index.html');
                 }
 
                 // Redirecting /blog to /blog/index.html
-                if ((requestUrl.pathname === '/blog') || (requestUrl.pathname === '/blog/')) {
+                if ((requestUrl.pathname == '/blog') || (requestUrl.pathname === '/blog/')) {
+                    console.log('success!');
                     return fetch('/blog/index.html');
                 }
 
                 // Redirecting /demos to /demos/index.html
-                if ((requestUrl.pathname === '/demos') || (requestUrl.pathname === '/demos/')) {
+                if ((requestUrl.pathname == '/demos') || (requestUrl.pathname === '/demos/')) {
+                    console.log('success!');
                     return fetch('/demos/index.html');
                 }
 
