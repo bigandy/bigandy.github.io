@@ -8,5 +8,7 @@ if ('serviceWorker' in navigator) {
 		.catch(function(err) {
 			console.log('ServiceWorker registration failed: ', err);
 		});
+} else {
+	console.log('Sorry your browser doesn\'t currently support serviceWorker');
 }
 </script>
