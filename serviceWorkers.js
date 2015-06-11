@@ -14,7 +14,7 @@ var filesToCache = [
 
     // Posts
     {% for post in site.posts %}
-    "{{ post.url }}/index.html", {% endfor %}
+    "{{ post.url }}/", {% endfor %}
 
     {% for page in site.pages %}'{{ page.url }}',
     {% endfor %}
