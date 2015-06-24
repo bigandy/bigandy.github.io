@@ -4,6 +4,10 @@ module.exports = function(grunt) {
     'use strict';
     grunt.initConfig({
 
+        dirs: {
+            dest: "_site",
+            src: "source"
+        },
         // let us know if our JS is sound
         jshint: {
             options: {
@@ -63,6 +67,18 @@ module.exports = function(grunt) {
             }
         },
 
+        uncss: {
+            dist: {
+                // options: {
+                //     stylesheets: 'css/style.css',
+                //     htmlroot: "<%= dirs.dest %>",
+                // },
+                src: ["<%= dirs.dest %>/**/*.html"],
+                dest: "<%= dirs.dest %>/css/uncss.css"
+
+            }
+        },
+
         // watch our project for changes
         watch: {
             sass: {
@@ -86,6 +102,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-uncss');
+
+
 
     // register task
     grunt.registerTask('default', [

@@ -12,7 +12,8 @@ exclude: [
  'bigandy.github.sublime-project',
  'package.json',
  'jquery.js',
- 'js/demos'
+ 'js/demos',
+ 'js/libs/**/*.html'
  ]
 # enforce_ssl: "bigandy.github.io"
 # baseurl: "https://bigandy.github.io/"
