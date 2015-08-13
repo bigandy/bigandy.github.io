@@ -42,15 +42,10 @@ module.exports = function(grunt) {
         uglify: {
             dist: {
                 files: {
-                    'js/build/demos/tabs.js': [
-                        'js/demos/tabs.js'
-                    ],
-                    'js/build/demos/tabs2.js': [
-                        'js/demos/tabs2.js'
-                    ],
-                    'js/build/jquery.min.js': [
-                        'js/jquery.js'
-                    ],
+                    'js/build/angular/posts.js': [
+                        'bower_components/angular/angular.min.js',
+                        'js/angular/posts.js'
+                    ]
                 }
             }
         },
@@ -64,18 +59,6 @@ module.exports = function(grunt) {
                 files: {
                     'css/style.css': '_sass/style.scss'
                 }
-            }
-        },
-
-        uncss: {
-            dist: {
-                // options: {
-                //     stylesheets: 'css/style.css',
-                //     htmlroot: "<%= dirs.dest %>",
-                // },
-                src: ["<%= dirs.dest %>/**/*.html"],
-                dest: "<%= dirs.dest %>/css/uncss.css"
-
             }
         },
 
@@ -110,7 +93,7 @@ module.exports = function(grunt) {
     grunt.registerTask('default', [
         // 'jshint',
         'sass',
-        // 'uglify',
+        'uglify',
         'watch'
     ]);
 
