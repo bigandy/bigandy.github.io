@@ -12,17 +12,43 @@
 			margin-top: 1em;
 		}
 	</style>
-	<script src="/js/build/angular/posts.js"></script>
+	<script src="/js/build/angular/angular.js"></script>
 </head>
 <body>
 	<h1>Collection of Posts from big-andy.co.uk</h1>
 
 	<div ng-controller="AppCtrl">
 		<article class="post" ng-repeat="post in posts">
-			<h3 ><a href="{{post.link}}" ng-bind-html="post.title.rendered | to_trusted"></a></h3>
+			<h3><a href="{{ post.link }}" ng-bind-html="post.title.rendered | to_trusted"></a></h3>
 			<div ng-show="post.excerpt.rendered !== ''" class="badgers" ng-bind-html="post.excerpt.rendered | to_trusted"></div>
 		</article>
 	</div>
 </body>
+	<script>
+	var app = angular.module('app', []);
 
+	app.filter('to_trusted', ['$sce', function($sce){
+			return function(text) {
+				return $sce.trustAsHtml(text);
+			};
+		}]);
+
+	// Add a controller
+	app.controller( 'AppCtrl', ['$scope', '$http', function( $scope, $http ) {
+
+		// Load posts from the WordPress API
+		$http({
+			cache: true,
+			method: 'GET',
+			url: 'https://big-andy.co.uk/wp-json/wp/v2/posts',
+			params: {
+				'filter[posts_per_page]' : 10
+			},
+		}).
+		success( function( data, status, headers, config ) {
+			// console.log( data );
+			$scope.posts = data;
+		});
+	}]);
+	</script>
 </html>
