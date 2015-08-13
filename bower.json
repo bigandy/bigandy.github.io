@@ -16,7 +16,9 @@
   ],
   "dependencies": {
     "picturefill": "~2.2.0",
-    "normalize-scss": "~3.0.2"
+    "normalize-scss": "~3.0.2",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.3"
   },
   "devDependencies": {
     "normalize-scss": "~3.0.1"
