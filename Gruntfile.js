@@ -9,16 +9,16 @@ module.exports = function(grunt) {
             src: "source"
         },
 
-        // // concatenation and minification all in one
-        // uglify: {
-        //     dist: {
-        //         files: {
-        //             'js/build/angular/angular.js': [
-        //                 'bower_components/angular/angular.min.js'
-        //             ]
-        //         }
-        //     }
-        // },
+        // concatenation and minification all in one
+        uglify: {
+            dist: {
+                files: {
+                    'js/build/angular/angular.js': [
+                        'bower_components/angular/angular.min.js'
+                    ]
+                }
+            }
+        },
 
         sass: {
             dist: {
