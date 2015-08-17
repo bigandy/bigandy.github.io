@@ -42,9 +42,9 @@ module.exports = function(grunt) {
             },
             js: {
                 files: [
-                    '<%= jshint.all %>'
+                    'js/**/*.js'
                 ],
-                tasks: ['jshint', 'js', 'requirejs']
+                tasks: ['js']
             }
         }
     });
