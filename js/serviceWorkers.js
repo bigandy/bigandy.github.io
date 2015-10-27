@@ -3,7 +3,7 @@ layout: null
 ---
 importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-var cacheName = 'bigandy-cache-v18';
+var cacheName = 'bigandy-cache-v19';
 var filesToCache = [
     // Stylesheets
     '/css/style.css',
@@ -43,19 +43,19 @@ self.addEventListener('fetch', function(event) {
 
                 // Redirecting /about to /about/index.html
                 if ((requestUrl.pathname == '/about') || (requestUrl.pathname === '/about/')) {
-                    console.log('success!');
+                    console.log('about success!');
                     return fetch('/about/index.html');
                 }
 
                 // Redirecting /blog to /blog/index.html
                 if ((requestUrl.pathname == '/blog') || (requestUrl.pathname === '/blog/')) {
-                    console.log('success!');
+                    console.log('blog success!');
                     return fetch('/blog/index.html');
                 }
 
                 // Redirecting /demos to /demos/index.html
                 if ((requestUrl.pathname == '/demos') || (requestUrl.pathname === '/demos/')) {
-                    console.log('success!');
+                    console.log('demos success!');
                     return fetch('/demos/index.html');
                 }
 
