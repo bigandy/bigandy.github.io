@@ -9,7 +9,7 @@ var cacheName = 'bigandy-cache-v16';
 var filesToCache = [
     // Stylesheets
     '/css/style.css',
-    '/css/font.css',
+    // '/css/font.css',
 
     // Favicon
     '/favicon.ico',
