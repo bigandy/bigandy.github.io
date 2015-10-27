@@ -3,13 +3,11 @@ layout: null
 ---
 importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-console.log('hello Worlds!');
-
-var cacheName = 'bigandy-cache-v17';
+var cacheName = 'bigandy-cache-v18';
 var filesToCache = [
     // Stylesheets
     '/css/style.css',
-    // '/css/font.css',
+    '/css/font.css',
 
     // Favicon
     '/favicon.ico',
