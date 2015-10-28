@@ -1,5 +1,6 @@
 # url: https://bigandy.pw
 # baseurl: "/static"
+gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title
