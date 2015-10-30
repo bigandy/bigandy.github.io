@@ -3,7 +3,7 @@ layout: null
 ---
 importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-var cacheName = 'bigandy-cache-v27';
+var cacheName = 'bigandy-cache-v28';
 var filesToCache = [
 	'/',
 	'/index.html',
@@ -22,16 +22,20 @@ var filesToCache = [
 	{% endfor %}
 ];
 
-self.addEventListener('activate', function(event) {
-	event.waitUntil(
-		caches.keys().then(function(keyList) {
-			return Promise.all(keyList.map(function(key) {
-				if ([cacheName].indexOf(key) === -1) {
-					return caches.delete(keyList[i]);
-				}
-			});
+// https://ponyfoo.com/articles/serviceworker-revolution
+self.addEventListener('activate', function activator (event) {
+  event.waitUntil(
+	caches.keys().then(function (keys) {
+	  return Promise.all(keys
+		.filter(function (key) {
+		  return key.indexOf(cacheName) !== 0;
 		})
-	);
+		.map(function (key) {
+		  return caches.delete(key);
+		})
+	  );
+	})
+  );
 });
 
 self.addEventListener('install', function(event) {
