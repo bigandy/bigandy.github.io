@@ -15,6 +15,9 @@ module.exports = function(grunt) {
                 files: {
                     'js/build/angular/angular.js': [
                         'bower_components/angular/angular.min.js'
+                    ],
+                    'js/build/script.min.js': [
+                        'js/lazy-load-css.js',
                     ]
                 }
             }
@@ -29,6 +32,21 @@ module.exports = function(grunt) {
                 files: {
                     'css/style.css': '_sass/style.scss'
                 }
+            }
+        },
+
+        critical: {
+            test: {
+                options: {
+                    base: './',
+                    css: [
+                        'css/style.css',
+                    ],
+                    width: 320,
+                    height: 320
+                },
+                src: '_site/index.html',
+                dest: '_includes/build/critical.css'
             }
         },
 
@@ -56,6 +74,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-critical');
 
     // register task
     grunt.registerTask('default', [
