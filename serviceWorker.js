@@ -24,18 +24,18 @@ var filesToCache = [
 
 // https://ponyfoo.com/articles/serviceworker-revolution
 self.addEventListener('activate', function activator (event) {
-  event.waitUntil(
-	caches.keys().then(function (keys) {
-	  return Promise.all(keys
-		.filter(function (key) {
-		  return key.indexOf(cacheName) !== 0;
+	event.waitUntil(
+		caches.keys().then(function (keys) {
+			return Promise.all(keys
+				.filter(function (key) {
+					return key.indexOf(cacheName) !== 0;
+				})
+				.map(function (key) {
+					return caches.delete(key);
+				})
+			);
 		})
-		.map(function (key) {
-		  return caches.delete(key);
-		})
-	  );
-	})
-  );
+	);
 });
 
 self.addEventListener('install', function(event) {
