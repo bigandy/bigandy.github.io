@@ -3,10 +3,8 @@ layout: null
 ---
 importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-var cacheName = 'bigandy-cache-v29';
+var cacheName = 'bigandy-cache-v30';
 var filesToCache = [
-	'/',
-	'/index.html',
 	// Stylesheets
 	'/css/style.css',
 	'/css/font.css',
