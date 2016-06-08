@@ -1,4 +1,4 @@
-# url: https://bigandy.pw
+# url: https://bigandy.github.io
 # baseurl: "/static"
 gems: [jekyll-paginate]
 markdown: kramdown
