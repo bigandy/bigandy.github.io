@@ -1,6 +1,6 @@
 gems: [jekyll-paginate]
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:year/:month/:day/:title
 paginate: 10
 exclude: [
