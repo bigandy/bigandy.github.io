@@ -1,3 +1,4 @@
+# baseurl: "/static"
 gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
@@ -14,5 +15,6 @@ exclude: [
  'js/demos',
  'js/libs/**/*.html'
  ]
+baseurl: "https://bigandy.github.io/"
 sass:
  style: :compressed
