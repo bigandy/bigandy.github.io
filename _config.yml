@@ -1,8 +1,6 @@
-# url: https://bigandy.pw
-# baseurl: "/static"
 gems: [jekyll-paginate]
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:year/:month/:day/:title
 paginate: 10
 exclude: [
@@ -16,7 +14,5 @@ exclude: [
  'js/demos',
  'js/libs/**/*.html'
  ]
-# enforce_ssl: "bigandy.github.io"
-# baseurl: "https://bigandy.github.io/"
 sass:
  style: :compressed

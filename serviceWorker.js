@@ -3,7 +3,7 @@ layout: null
 ---
 importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-var cacheName = 'bigandy-cache-v30';
+var cacheName = 'bigandy-cache-v31';
 var filesToCache = [
 	// Stylesheets
 	'/css/style.css',
@@ -14,7 +14,7 @@ var filesToCache = [
 
 	// Posts
 	{% for post in site.posts %}
-	'{{ post.url }}/index.html', {% endfor %}
+	'{{ post.url }}', {% endfor %}
 
 	{% for page in site.pages %}'{{ page.url }}',
 	{% endfor %}
