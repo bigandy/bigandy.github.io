@@ -42,7 +42,7 @@ self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(cache.version).then((cache) => {
 			return cache.addAll(filesToCache)
-				).then(() => {
+				.then(() => {
 					return self.skipWaiting();
 				});
 		})
