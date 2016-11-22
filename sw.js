@@ -40,7 +40,7 @@ self.addEventListener('activate', function activator (event) {
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
-		caches.open(cacheName).then(function(cache) {
+		caches.open(cache.version).then((cache) => {
 			console.log('caching files');
 			return cache.addAll(filesToCache);
 		})
