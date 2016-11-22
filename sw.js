@@ -1,9 +1,11 @@
 ---
 layout: null
 ---
-importScripts('/js/vendor/serviceworker-cache-polyfill.js');
 
-var cacheName = 'bigandy-cache-v33';
+const cache = {
+    version: '{% if site.github %}{{site.github.build_revision}}{% endif %}'
+};
+
 var filesToCache = [
 	// Stylesheets
 	'/css/style.css',
@@ -26,7 +28,7 @@ self.addEventListener('activate', function activator (event) {
 		caches.keys().then(function (keys) {
 			return Promise.all(keys
 				.filter(function (key) {
-					return key.indexOf(cacheName) !== 0;
+					return key.indexOf(cache.version) !== 0;
 				})
 				.map(function (key) {
 					return caches.delete(key);
