@@ -41,7 +41,6 @@ self.addEventListener('activate', event => {
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(cache.version).then((cache) => {
-			console.log('caching files');
 			return cache.addAll(filesToCache);
 		})
 	);
@@ -50,7 +49,7 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
 	var requestUrl = new URL(event.request.url);
 	
-	console.log(requestUrl);
+	console.log(`Request Url: ${requestUrl}`);
 
 	event.respondWith(
 		caches.match(event.request)
@@ -62,19 +61,16 @@ self.addEventListener('fetch', function(event) {
 
 				// Redirecting /about to /about/index.html
 				if ((requestUrl.pathname == '/about') || (requestUrl.pathname === '/about/')) {
-					console.log('about success!');
 					return fetch('/about/index.html');
 				}
 
 				// Redirecting /blog to /blog/index.html
 				if ((requestUrl.pathname == '/blog') || (requestUrl.pathname === '/blog/')) {
-					console.log('blog success!');
 					return fetch('/blog/index.html');
 				}
 
 				// Redirecting /demos to /demos/index.html
 				if ((requestUrl.pathname == '/demos') || (requestUrl.pathname === '/demos/')) {
-					console.log('demos success!');
 					return fetch('/demos/index.html');
 				}
 
