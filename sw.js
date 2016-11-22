@@ -23,7 +23,7 @@ var filesToCache = [
 ];
 
 // https://ponyfoo.com/articles/serviceworker-revolution
-self.addEventListener('activate', function activator (event) {
+self.addEventListener('activate', event => {
 	event.waitUntil(
 		caches.keys().then(function (keys) {
 			return Promise.all(keys
@@ -49,6 +49,8 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', function(event) {
 	var requestUrl = new URL(event.request.url);
+	
+	console.log(requestUrl);
 
 	event.respondWith(
 		caches.match(event.request)
