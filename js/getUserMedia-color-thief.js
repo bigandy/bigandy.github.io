@@ -485,7 +485,7 @@ var options = {
 };
 
 if (navigator.getUserMedia){
-	navigator.getUserMedia(options, v_success);
+	navigator.getUserMedia(options, v_success, v_error);
 }
 
 else if (navigator.webkitGetUserMedia) {
