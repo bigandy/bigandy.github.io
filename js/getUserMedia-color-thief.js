@@ -105,7 +105,11 @@
       photo.setAttribute('src', data);
       
       var colorThief = new ColorThief();
-      var color = colorThief.getColor(photo);
+      var color = colorThief.getColor(document.getElementById('photo'));
+      
+      if (color === undefined) {
+        color = [200, 100, 0]; 
+      }
 
       console.log(color);
 
