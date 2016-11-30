@@ -103,6 +103,13 @@
     
       var data = canvas.toDataURL('image/png');
       photo.setAttribute('src', data);
+      
+      var colorThief = new ColorThief();
+      var color = colorThief.getColor(photo);
+
+      console.log(color);
+
+      document.body.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
     } else {
       clearphoto();
     }
