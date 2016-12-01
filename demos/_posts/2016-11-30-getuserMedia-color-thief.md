@@ -9,29 +9,28 @@ custom-script: [<script src="/js/color-thief.js"></script><script src="/js/getUs
 #video {
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
-  width:320px;
-  height:240px;
+  width: 320px;
+  height: 240px;
 }
 
 #photo {
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
-  width:320px;
-  height:240px;
+  width: 320px;
+  height: 240px;
+  margin: 0;
 }
 
 #canvas {
-  display:none;
+  display: none;
 }
 
 .camera {
   width: 340px;
-  display:inline-block;
 }
 
 .output {
   width: 340px;
-  display:inline-block;
 }
 
 #startbutton {
@@ -49,13 +48,11 @@ custom-script: [<script src="/js/color-thief.js"></script><script src="/js/getUs
 }
 
 .contentarea {
-  font-size: 16px;
-  font-family: "Lucida Grande", "Arial", sans-serif;
   width: 760px;
 }
-
 </style>
 <div class="contentarea">
+	<p>Taken from a MDN article about webrtc, I used this to take a photo. Once the photo has been taken I will get the dominant colour using color-thief and set the background colour with this.</p>
   <div class="camera">
     <video id="video">Video stream not available.</video>
     <button id="startbutton">Take photo</button> 
