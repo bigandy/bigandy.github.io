@@ -6,18 +6,16 @@ category: demos
 custom-script: [<script src="/js/color-thief.js"></script><script src="/js/getUserMedia-color-thief.js"></script>]
 ---
 <style>
+
+#photo, 
 #video {
-  border: 1px solid black;
-  box-shadow: 2px 2px 3px black;
   width: 320px;
   height: 240px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
 }
 
 #photo {
-  border: 1px solid black;
-  box-shadow: 2px 2px 3px black;
-  width: 320px;
-  height: 240px;
   margin: 0;
 }
 
@@ -25,10 +23,7 @@ custom-script: [<script src="/js/color-thief.js"></script><script src="/js/getUs
   display: none;
 }
 
-.camera {
-  width: 340px;
-}
-
+.camera,
 .output {
   width: 340px;
 }
@@ -47,22 +42,17 @@ custom-script: [<script src="/js/color-thief.js"></script><script src="/js/getUs
   color: rgba(255, 255, 255, 1.0);
 }
 
-.contentarea {
-  width: 760px;
-}
 </style>
-<div class="contentarea">
-	<p>Taken from a MDN article about webrtc, I used this to take a photo. Once the photo has been taken I will get the dominant colour using color-thief and set the background colour with this.</p>
-  <div class="camera">
-    <video id="video">Video stream not available.</video>
-    <button id="startbutton">Take photo</button> 
-  </div>
-  <canvas id="canvas">
-  </canvas>
-  <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box."> 
-  </div>
-	<p>
-		Visit our article <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos"> Taking still photos with WebRTC</a> to learn more about the technologies used here.
-	</p>
+<p>Taken from a MDN article about webrtc, I used this to take a photo. Once the photo has been taken I will get the dominant colour using color-thief and set the background colour with this.</p>
+<div class="camera">
+<video id="video">Video stream not available.</video>
+<button id="startbutton">Take photo</button> 
 </div>
+<canvas id="canvas">
+</canvas>
+<div class="output">
+<img id="photo" alt="The screen capture will appear in this box."> 
+</div>
+<p>
+	Visit our article <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos"> Taking still photos with WebRTC</a> to learn more about the technologies used here.
+</p>
