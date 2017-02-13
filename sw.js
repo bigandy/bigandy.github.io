@@ -6,7 +6,9 @@ const cache = {
     version: '{% if site.github %}{{site.github.build_revision}}{% endif %}'
 };
 
-var filesToCache = [
+importScripts('/js/async-waituntil.js');
+
+const filesToCache = [
 	// Stylesheets
 	'/css/style.css',
 	'/css/font.css',
