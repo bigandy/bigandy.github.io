@@ -40,24 +40,23 @@ self.addEventListener('activate', event => {
 	);
 });
 
-self.addEventListener('install', function(event) {
-	event.waitUntil(
+self.addEventListener('install', (e) => {
+	e.waitUntil(
 		caches.open(cache.version).then((cache) => {
 			return cache.addAll(filesToCache);
 		})
 	);
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', (event) => {
 	var requestUrl = new URL(event.request.url);
 	
-	console.log(`Request Url: ${requestUrl}`);
-
 	event.respondWith(
 		caches.match(event.request)
-			.then(function(match) {
+			.then((match) => {
+				console.log(match, requestUrl.pathname);
 				if (match) {
-					console.log('* [Serving cached]: ' + event.request.url);
+					// console.log('* [Serving cached]: ' + event.request.url);
 					return match;
 				}
 
@@ -76,7 +75,7 @@ self.addEventListener('fetch', function(event) {
 					return fetch('/demos/index.html');
 				}
 
-				console.log('* [Fetching]: ' + event.request.url);
+ 				// console.log('* [Fetching]: ' + event.request.url);
 				return fetch(event.request);
 			}
 		)
