@@ -19,12 +19,10 @@ function updateStaticCache() {
         // These items must be cached for the Service Worker to complete installation
         return cache.addAll([
             // Posts
-			{% for post in site.posts %}
-			'{{ post.url }}', 
-			{% endfor %}
+			{% for post in site.posts %}'{{ post.url }}',{% endfor %}
 			// Pages
 			{% for page in site.pages %}
-				{% if page.resource == true %}
+				{% if page.cache == true %}
 					'{{ page.url }}',
 				{% endif %}
 			{% endfor %}
