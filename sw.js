@@ -28,24 +28,6 @@ function updateStaticCache() {
     });
 }
 
-// https://ponyfoo.com/articles/serviceworker-revolution
-self.addEventListener('activate', event => {
-	event.waitUntil(
-		caches.keys().then(function (keys) {
-			return Promise.all(keys
-				.filter(function (key) {
-					return key.indexOf(cache.version) !== 0;
-				})
-				.map(function (key) {
-					return caches.delete(key);
-				})
-			);
-		})
-	);
-});
-
-
-
 // Remove caches whose name is no longer valid	
 function clearOldCaches() {
     return caches.keys()
