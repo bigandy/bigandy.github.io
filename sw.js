@@ -11,19 +11,22 @@ function updateStaticCache() {
     .then( cache => {
         // These items won't block the installation of the Service Worker
         cache.addAll([
-            // Stylesheets
 			'/css/style.css',
 			'/css/font.css',
-			// Favicon
 			'/favicon.ico',
         ]);
+		
         // These items must be cached for the Service Worker to complete installation
         return cache.addAll([
             // Posts
 			{% for post in site.posts %}
-			'{{ post.url }}', {% endfor %}
-
-			{% for page in site.pages %}'{{ page.url }}',
+			'{{ post.url }}', 
+			{% endfor %}
+			// Pages
+			{% for page in site.pages %}
+				{% if page.resource == true %}
+					'{{ page.url }}',
+				{% endif %}
 			{% endfor %}
         ]);
     });
@@ -126,38 +129,3 @@ self.addEventListener('fetch', event => {
         })
     );
 });
-
-// self.addEventListener('fetch', (event) => {
-// 	var requestUrl = new URL(event.request.url);
-	
-// 	event.respondWith(
-// 		caches.match(event.request)
-// 			.then((match) => {
-// 				console.log(match, requestUrl.pathname);
-// 				if (match) {
-// 					// console.log('* [Serving cached]: ' + event.request.url);
-// 					return match;
-// 				}
-
-// 				// Redirecting /about to /about/index.html
-// 				if ((requestUrl.pathname == '/about') || (requestUrl.pathname === '/about/')) {
-// 					return fetch('/about/index.html');
-// 				}
-
-// 				// Redirecting /blog to /blog/index.html
-// 				if ((requestUrl.pathname == '/blog') || (requestUrl.pathname === '/blog/')) {
-// 					return fetch('/blog/index.html');
-// 				}
-
-// 				// Redirecting /demos to /demos/index.html
-// 				if ((requestUrl.pathname == '/demos') || (requestUrl.pathname === '/demos/')) {
-// 					return fetch('/demos/index.html');
-// 				}
-
-//  				// console.log('* [Fetching]: ' + event.request.url);
-// 				return fetch(event.request);
-// 			}
-// 		)
-// 	);
-
-// });
