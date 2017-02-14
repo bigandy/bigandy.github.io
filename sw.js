@@ -22,8 +22,8 @@ function updateStaticCache() {
 			{% for post in site.posts %}
 			'{{ post.url }}', {% endfor %}
 			// Pages
-			{% for page in site.pages %}
-			{% if page.cache == true %}'{{ page.url }}', {% endif %}{% endfor %}
+			{% for page in site.pages %}{% if page.cache == true %}
+			'{{ page.url }}', {% endif %}{% endfor %}
         ]);
     });
 }
@@ -46,7 +46,7 @@ self.addEventListener('activate', event => {
 
 
 
-// Remove caches whose name is no longer valid
+// Remove caches whose name is no longer valid	
 function clearOldCaches() {
     return caches.keys()
     .then( keys => {
