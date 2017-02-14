@@ -19,5 +19,3 @@ I would also like to do something with:
 - temperature/weather.
 - Strava API
 - Withings API (I have a withings smart scale)
-
-...
