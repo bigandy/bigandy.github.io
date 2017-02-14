@@ -11,9 +11,10 @@ function updateStaticCache() {
     .then( cache => {
         // These items won't block the installation of the Service Worker
         cache.addAll([
-			'/css/style.css',
-			'/css/font.css',
-			'/favicon.ico',
+		'/css/style.css',
+		'/css/font.css',
+		'/favicon.ico',
+		'/js/build/script.min.js',
         ]);
 		
         // These items must be cached for the Service Worker to complete installation
