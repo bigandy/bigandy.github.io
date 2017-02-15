@@ -1,37 +1,37 @@
 {
-  "manifest_version": 9,
+  "manifest_version": 10,
   "name": "Andrew JD Hudson",
-  "version": "0.9",
+  "version": "0.10",
   "lang": "en",
   "short_name": "Big Andy",
   "icons": [
     {
-      "src": "/images/16.jpg",
+      "src": "/images/manifest/16.jpg",
       "sizes": "16x16",
       "type": "image/jpeg"
     },
     {
-      "src": "/images/32.jpg",
+      "src": "/images/manifest/32.jpg",
       "sizes": "32x32",
       "type": "image/jpeg"
     },
     {
-      "src": "/images/48.jpg",
+      "src": "/images/manifest/48.jpg",
       "sizes": "48x48",
       "type": "image/jpeg"
     },
     {
-      "src": "/images/128.jpg",
+      "src": "/images/manifest/128.jpg",
       "sizes": "128x128",
       "type": "image/jpeg"
     },
     {
-      "src": "/images/192.jpg",
+      "src": "/images/manifest/192.jpg",
       "sizes": "192x192",
       "type": "image/jpeg"
     },
     {
-      "src": "/images/512.jpg",
+      "src": "/images/manifest/512.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
