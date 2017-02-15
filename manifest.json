@@ -4,18 +4,10 @@
   "version": "0.3",
   "lang": "en",
   "short_name": "Big Andy",
-  "icons": [
-	  {
-		  "src": "/images/512.jpg",
-		  "sizes": "512x512",
-		  "type": "image/jpeg"
-	  },
-    {
-		  "src": "/images/192.jpg",
-		  "sizes": "192x192",
-		  "type": "image/jpeg"
-	  },
-  ],
+  "icons": {
+	"512": "/images/512.jpg",
+	"192": "/images/192.jpg"
+  },
   "theme_color": "#AEEEEE",
   "background_color": "#000000",
   "start_url": "/",
