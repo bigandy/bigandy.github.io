@@ -1,16 +1,16 @@
 {
-  "manifest_version": 6,
+  "manifest_version": 7,
   "name": "Andrew JD Hudson",
-  "version": "0.6",
+  "version": "0.7",
   "lang": "en",
   "short_name": "Big Andy",
   "icons": {
-	"512": "/images/512.jpg",
-	"192": "/images/192.jpg",
-	"128": "/images/128.jpg",
-	"48": "/images/48.jpg",
-	"32": "/images/32.jpg",
-	"16": "/images/16.jpg"
+    "16": "/images/16.jpg",
+    "32": "/images/32.jpg",
+    "48": "/images/48.jpg",
+    "128": "/images/128.jpg",
+    "192": "/images/192.jpg",
+    "512": "/images/512.jpg"
   },
   "theme_color": "#AEEEEE",
   "background_color": "#000000",
@@ -18,3 +18,4 @@
   "display": "standalone",
   "orientation": "portrait"
 }
+
