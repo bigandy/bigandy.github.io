@@ -15,6 +15,7 @@ function updateStaticCache() {
 		'/css/font.css',
 		'/favicon.ico',
 		'/js/build/script.min.js',
+		'manifest.json',
         ]);
 		
         // These items must be cached for the Service Worker to complete installation
