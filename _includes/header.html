@@ -10,9 +10,11 @@
 {% endif %}>
   <head>
     <meta charset="utf-8">
+    <style>{% include build/critical.css %}</style>
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>{% include build/critical.css %}</style>
+    <meta name="theme-color" content="#AEEEEE" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   </head>
 <body class="page {{ page.page-class }}">
