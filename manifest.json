@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Andrew JD Hudson",
-  "version": "2",
+  "version": "0.3",
   "lang": "en",
   "short_name": "Big Andy",
   "icons": [
