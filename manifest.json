@@ -1,44 +1,39 @@
 {
-  "manifest_version": 10,
+  "manifest_version": 11,
   "name": "Andrew JD Hudson",
-  "version": "0.10",
-  "lang": "en",
+  "version": "0.11",
   "short_name": "Big Andy",
-  "icons": [
-    {
-      "src": "/images/manifest/16.jpg",
-      "sizes": "16x16",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "/images/manifest/32.jpg",
-      "sizes": "32x32",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "/images/manifest/48.jpg",
-      "sizes": "48x48",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "/images/manifest/128.jpg",
-      "sizes": "128x128",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "/images/manifest/192.jpg",
-      "sizes": "192x192",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "/images/manifest/512.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg"
-    }
-  ],
+  "icons": [{
+        "src": "images/manifest/ba-128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      }, {
+        "src": "images/manifest/ba-152.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      }, {
+        "src": "images/manifest/ba-144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }, {
+        "src": "images/manifest/ba-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/manifest/ba-256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "images/manifest/ba-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }],
   "theme_color": "#AEEEEE",
   "background_color": "#000000",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait"
 }
