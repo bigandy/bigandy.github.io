@@ -16,6 +16,12 @@ function updateStaticCache() {
 		'/favicon.ico',
 		'/js/build/script.min.js',
 		'/manifest.json',
+		'/images/manifest/ba-128.png',
+		'/images/manifest/ba-152.png',
+		'/images/manifest/ba-144.png',
+		'/images/manifest/ba-192.png',
+		'/images/manifest/ba-256.png',
+		'/images/manifest/ba-512.png',
         ]);
 		
         // These items must be cached for the Service Worker to complete installation
