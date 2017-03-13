@@ -1,12 +1,10 @@
-@import "../bower_components/normalize-scss/normalize";
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize(); // call in normalize via mixin
+
 @import "variables";
 @import "responsive-nav";
-@import "flexbox";
 @import "page";
 @import "running";
-
-
-/* Screens Wider than 720px */
 
 @media screen and (min-width: 400px) {
     picture,
@@ -34,7 +32,7 @@
     }
 
     .page--home .container--home {
-        @include flexbox;
+        display: flex;
     }
 
     .page--home section {
