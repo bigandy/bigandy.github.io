@@ -11,19 +11,19 @@ function updateStaticCache() {
     .then( cache => {
         // These items won't block the installation of the Service Worker
         cache.addAll([
-		'/css/style.css',
-		'/css/font.css',
-		'/favicon.ico',
-		'/js/build/script.min.js',
-		'/manifest.json',
-		'/images/manifest/ba-128.png',
-		'/images/manifest/ba-152.png',
-		'/images/manifest/ba-144.png',
-		'/images/manifest/ba-192.png',
-		'/images/manifest/ba-256.png',
-		'/images/manifest/ba-512.png',
+			'/css/style.css',
+			'/css/font.css',
+			'/favicon.ico',
+			'/js/build/script.min.js',
+			'/manifest.json',
+			'/images/manifest/ba-128.png',
+			'/images/manifest/ba-152.png',
+			'/images/manifest/ba-144.png',
+			'/images/manifest/ba-192.png',
+			'/images/manifest/ba-256.png',
+			'/images/manifest/ba-512.png',
         ]);
-		
+
         // These items must be cached for the Service Worker to complete installation
         return cache.addAll([
             // Posts
@@ -36,7 +36,7 @@ function updateStaticCache() {
     });
 }
 
-// Remove caches whose name is no longer valid	
+// Remove caches whose name is no longer valid
 function clearOldCaches() {
     return caches.keys()
     .then( keys => {
