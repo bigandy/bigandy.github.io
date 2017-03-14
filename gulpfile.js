@@ -40,10 +40,10 @@ const siteRoot = '_site';
 
 var browsers = ['last 1 version'];
 
-const jk = process.platform === "win32" ? "jekyll.bat" : "jekyll"; // because not working on windows https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues/2
+// const jk = process.platform === "win32" ? "jekyll.bat" : "jekyll"; // because not working on windows https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues/2
 
 gulp.task('jekyll', () => {
-	const jekyll = child.spawn(jk, ['build',
+	const jekyll = child.spawn('jekyll', ['build',
 		'--watch',
 		'--incremental',
 		'--drafts'

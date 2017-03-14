@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-%cf {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+body {
+    position: relative;
+    margin: 2rem auto 0;
+    font-family: $open;
 }
 
 .post {
@@ -28,30 +26,6 @@
 
     .page-title {
         color: $black;
-    }
-}
-
-body {
-    position: relative;
-    margin: 2rem auto 0;
-    font-family: $open;
-}
-
-.list--plain {
-    margin: 0;
-    padding: 0;
-
-    li {
-        list-style-type: none;
-    }
-}
-
-.list--inline {
-    @extend %cf;
-
-    li {
-        float: left;
-        padding-right: 5px;
     }
 }
 
@@ -82,7 +56,6 @@ footer {
 }
 
 .container {
-    @extend %cf;
     margin-top: 0;
     margin: 0 1%;
 }

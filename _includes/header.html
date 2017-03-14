@@ -10,7 +10,11 @@
 {% endif %}>
   <head>
     <meta charset="utf-8">
-    <style>{% include build/critical.css %}</style>
+	{% if site.github %}
+		<style>{% include build/critical.css %}</style>
+	{% else %}
+		<link rel="stylesheet" href="/css/style.css" />
+	{% endif %}
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#AEEEEE" />
