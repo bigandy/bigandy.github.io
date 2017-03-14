@@ -7,7 +7,7 @@ exclude: [
  'node_modules',
  '.gitignore',
  'README.md',
- 'Gruntfile.js',
+ 'gulpfile.js',
  'bigandy.github.sublime-project',
  'package.json',
  'jquery.js',
