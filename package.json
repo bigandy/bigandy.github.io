@@ -15,13 +15,19 @@
   ],
   "devDependencies": {
     "autoprefixer": "^6.7.7",
+    "bluebird": "^3.5.0",
     "browser-sync": "^2.18.8",
     "child_process": "^1.0.2",
+    "clean-css": "^4.0.8",
+    "critical": "^0.8.4",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1",
-    "gulp-util": "^3.0.8"
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "penthouse": "^0.10.9",
+    "uncss": "^0.14.1"
   },
   "dependencies": {
     "normalize-scss": "^6.0.0"

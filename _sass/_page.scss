@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -18,11 +20,11 @@
 }
 
 .post--even {
-    background: hsla(97, 52%, 47%, 1);
+    background: hsl(97, 52%, 47%);
 }
 
 .post--odd {
-    background: hsla(30, 100%, 50%, 1);
+    background: hsl(30, 100%, 50%);
 
     .page-title {
         color: $black;
@@ -192,7 +194,7 @@ img {
 
     &:hover,
     &:focus {
-        color: $white;
+        color: $black;
         background: $blue;
         text-decoration: none;
     }
