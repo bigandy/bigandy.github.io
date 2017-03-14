@@ -15,8 +15,10 @@ const siteRoot = '_site';
 
 var browsers = ['last 1 version'];
 
+const jk = process.platform === "win32" ? "jekyll.bat" : "jekyll"; // because not working on windows https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues/2
+
 gulp.task('jekyll', () => {
-  const jekyll = child.spawn('jekyll', ['build',
+  const jekyll = child.spawn(jk, ['build',
     '--watch',
     '--incremental',
     '--drafts'
