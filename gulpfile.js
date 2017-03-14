@@ -78,7 +78,7 @@ gulp.task('critical-css', () => {
 			],
 			css: './css/style.css',
 			height: 1200, // 600
-			width: 1000, // 400
+			width: 1100, // 400
 		    minify: true,
 		}).then(criticalCSS => {
 			outputCSS(criticalCSS, outputFile);
