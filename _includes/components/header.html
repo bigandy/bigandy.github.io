@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" {% if page.post_id %}
+  {% capture currentmod %}{{ page.post_id|modulo:2 }}{% endcapture %}
+
+  {% if currentmod == '0' %}
+    class="post post--even"
+  {% else %}
+    class="post post--odd"
+  {% endif %}
+{% endif %}>
+  <head>
+    <meta charset="utf-8">
+	{% if site.github %}
+		<style>{% include build/critical.css %}</style>
+	{% else %}
+		<link rel="stylesheet" href="/css/style.css" />
+	{% endif %}
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#AEEEEE" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  </head>
+<body class="page {{ page.page-class }}">
+  <header class="header">
+    <h1>
+      <a href="/">bigandy.pw</a>
+    </h1>
+    {% include components/nav.html %}
+  </header>
