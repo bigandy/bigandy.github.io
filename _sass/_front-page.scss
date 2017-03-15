@@ -1,18 +1,33 @@
-.grid {
-    display: grid;
-
-	&--home {
-		grid-template-columns: 1fr 1fr;
-    	grid-auto-flow: column;
-	}
-}
-
 .post {
 	&--demos {
 		grid-column-start: 2;
+        border: 1px solid hsla(200, 50%, 50%, 0.5);
 	}
 
 	&--blog {
 		grid-column-start: 1;
+        border: 1px solid hsla(150, 100%, 50%, 0.5);
 	}
+
+	&--home {
+	    padding: .5em .5em 0;
+	    margin-bottom: 1em;
+	}
+}
+
+@media (min-width: 500px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+
+        &--home {
+            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-flow: column;
+        }
+    }
+
+    .post--home {
+        margin-bottom: 0;
+    }
 }

@@ -39,50 +39,14 @@ footer {
     margin: 0 1%;
 }
 
-nav {
-    margin-bottom: 50px;
-
-    > a {
-        padding: 1em 1em 1em 0;
-    }
-}
-
 .pagination {
     margin-top: 50px;
-}
-
-$nav-list: home, blog, about, demos, running;
-
-@each $nav in $nav-list {
-    .page--#{$nav} .nav--#{$nav} {
-        color: red;
-    }
-}
-
-.hidden {
-    display: none;
-}
-
-#overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba($black, .5);
-    z-index: 999999;
 }
 
 picture,
 img {
     max-width: 100%;
     width: 100%;
-}
-
-.page--home article {
-    padding: 1% 1% 1% 0;
-}
-
-.page--home section {
-    padding: 0 1% 1% 0;
 }
 
 .btn {
@@ -95,11 +59,6 @@ img {
         background: $blue;
         text-decoration: none;
     }
-}
-
-.btn--right {
-    display: inline-block;
-    margin: 3rem auto 0;
 }
 
 .full-width {

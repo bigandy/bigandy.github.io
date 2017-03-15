@@ -1,0 +1,15 @@
+nav {
+    margin-bottom: 2em;
+
+    > a {
+        padding: 1em 1em 1em 0;
+    }
+}
+
+$nav-list: home, blog, about, demos, running;
+
+@each $nav in $nav-list {
+    .page--#{$nav} .nav--#{$nav} {
+        color: red;
+    }
+}

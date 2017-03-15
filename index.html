@@ -7,7 +7,7 @@ cache: true
 ---
 <section class="grid grid--home">
   {% for post in site.posts limit: page.posts-number %}
-    {% capture post_category %}post--{{ post.category }}{% endcapture %}
+    {% capture post_category %}post--home post--{{ post.category }}{% endcapture %}
 
     {% include components/post-summary.html class=post_category %}
   {% endfor %}
