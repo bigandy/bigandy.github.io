@@ -1,15 +1,20 @@
 <article class="post {{ include.class }}">
-	<header>
-		<ul class="list--plain post__meta">
-			<li>{{ post.date | date_to_string }}</li>
-		</ul>
-		<h2>
-			<a href="{{ post.url }}">
-				{{ post.title }}
-			</a>
-		</h2>
-	</header>
-	<p>
-		{{ post.summary }}
-	</p>
+	<div class="post__content">
+		<header>
+			<ul class="list--plain post__meta">
+				<li>{{ post.date | date_to_string }}</li>
+			</ul>
+			<h2>
+				<a href="{{ post.url }}">
+					{{ post.title }}
+				</a>
+			</h2>
+		</header>
+		<p>
+			{{ post.summary }}
+		</p>
+	</div>
+	<div class="post__label">
+		{% if include.label %}{{ include.label }}{% endif %}
+	</div>
 </article>
