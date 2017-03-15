@@ -2,28 +2,16 @@
 layout: default
 title: Andrew Hudson
 page-class: page--home
-posts-number: 10
+posts-number: 20
 cache: true
 ---
 <section class="grid grid--home">
   {% for post in site.posts limit: page.posts-number %}
-    <article>
-      <header>
-        <ul class="list--plain post__meta">
-            <li>{{ post.date | date_to_string }}</li>
-        </ul>
-        <h2>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-            </a>
-        </h2>
-      </header>
-      <p>
-        {{ post.summary }}
-      </p>
-    </article>
+    {% capture post_category %}post--{{ post.category }}{% endcapture %}
+
+    {% include components/post-summary.html class=post_category %}
   {% endfor %}
 </section>
 
-<a href="/blog/" class="btn btn--right">Read more in the blog &rarr;</a>
-<a href="/demos/" class="btn btn--right">See more demos &rarr;</a>
+<a href="/blog/" class="btn">Read more in the blog &rarr;</a>
+<a href="/demos/" class="btn">See more demos &rarr;</a>

@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" {% if page.post_id %}
-  {% capture currentmod %}{{ page.post_id|modulo:2 }}{% endcapture %}
-
-  {% if currentmod == '0' %}
-    class="post post--even"
-  {% else %}
-    class="post post--odd"
-  {% endif %}
-{% endif %}>
+<html lang="en">
   <head>
     <meta charset="utf-8">
 	{% if site.github %}

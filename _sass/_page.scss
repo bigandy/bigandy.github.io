@@ -6,27 +6,7 @@
 
 body {
     position: relative;
-    margin: 2rem auto 0;
     font-family: $open;
-}
-
-.post {
-    .post-content,
-    .post__meta li {
-        color: $white;
-    }
-}
-
-.post--even {
-    background: hsl(97, 52%, 47%);
-}
-
-.post--odd {
-    background: hsl(30, 100%, 50%);
-
-    .page-title {
-        color: $black;
-    }
 }
 
 header {
