@@ -31,12 +31,14 @@ body {
 
 header {
     .post__meta {
+        order: 2;
         display: inline-block;
         position: relative;
         bottom: 4px;
     }
 
     h2 {
+        order: 1;
         display: inline;
         margin: 0;
     }

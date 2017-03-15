@@ -6,22 +6,21 @@ category: blog
 cache: true
 ---
 <h1>Blog</h1>
-<div class="row">
-	{% for post in site.categories.blog limit: 50 %}
-		<article>
-			<header>
-				<ul class="list--plain post__meta">
-					<li>{{ post.date | date_to_string }}</li>
-				</ul>
-				<h2>
-					<a href="{{ post.url }}">
-						{{ post.title }}
-					</a>
-				</h2>
-			</header>
-			<p>
-				{{ post.summary }}
-			</p>
-		</article>
-	</div>
+{% for post in site.categories.blog limit: 50 %}
+	<article>
+		<header>
+			<h2>
+				<a href="{{ post.url }}.html">
+					{{ post.title }}
+				</a>
+			</h2>
+
+			<ul class="list--plain post__meta">
+				<li>{{ post.date | date_to_string }}</li>
+			</ul>
+		</header>
+		<p>
+			{{ post.summary }}
+		</p>
+	</article>
 {% endfor %}

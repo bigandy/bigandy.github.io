@@ -2,22 +2,4 @@
 layout: default
 page-class: page--blog
 ---
-<article class="content">
-    <header>
-        <ul class="list--plain post__meta">
-            <li>{{ page.date | date_to_string }}</li>
-        </ul>
-        <h1 class="page-title">
-            {{ page.title }}
-        </h1>
-    </header>
-    <div class="post-content">
-        {{ content }}
-    </div>
-</article>
-<nav class="pagination">
-    {% if page.previous.url %}<a href="{{ page.previous.url }}">Previous Post</a>{% endif %}
-    {% if page.next.url %}<a href="{{ page.next.url }}">Next Post</a>{% endif %}
-</nav>
-
-
+{% include components/post.html %}

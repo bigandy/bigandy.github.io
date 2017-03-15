@@ -30,8 +30,8 @@ const pages = [
 		env + 'blog/',
 		env + 'demos/',
 		env + '',
-		env + '2016/11/30/dominant-color/',
-		env + '2016/11/22/raspberry-pi/'
+		env + '2016/11/30/dominant-color.html',
+		env + '2016/11/22/raspberry-pi.html'
 	];
 
 const penthouseAsync = Promise.promisify(penthouse);
@@ -40,10 +40,10 @@ const siteRoot = '_site';
 
 var browsers = ['last 1 version'];
 
-// const jk = process.platform === "win32" ? "jekyll.bat" : "jekyll"; // because not working on windows https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues/2
+const jk = process.platform === "win32" ? "jekyll.bat" : "jekyll"; // because not working on windows https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues/2
 
 gulp.task('jekyll', () => {
-	const jekyll = child.spawn('jekyll', ['build',
+	const jekyll = child.spawn(jk, ['build',
 		'--watch',
 		'--incremental',
 		'--drafts'
@@ -138,3 +138,6 @@ gulp.task('default', [
 	'serve',
 	'jekyll'
 ]);
+
+// The default task (called when you run `gulp` from cli)
+gulp.task('deploy', ['uncss', 'critical-css']);

@@ -6,4 +6,6 @@ bower_components
 *.sublime-*
 node_modules
 npm-debug.log
+debug.log
 .jekyll-metadata
+
