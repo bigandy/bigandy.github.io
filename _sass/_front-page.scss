@@ -2,21 +2,7 @@ $demos-bg: hsla(200, 50%, 50%, 0.5);
 $blog-bg: hsla(150, 100%, 50%, 0.5);
 
 .post {
-	&--demos {
-		grid-column-start: 2;
-        border-color: $demos-bg;
-	}
-
-	&--blog {
-		grid-column-start: 1;
-        border-color: $blog-bg;
-	}
-
-	&--home {
-	    margin-bottom: 1em;
-		border-width: 1px;
-		border-style: solid;
-	}
+	$amp: &; // cache the reference to the top-level block
 
 	&__content {
 		padding: .5em .5em 0;
@@ -30,22 +16,53 @@ $blog-bg: hsla(150, 100%, 50%, 0.5);
 		padding: 1em;
 	}
 
-	$amp: &; // cache the reference to the top-level block
-	&--blog {
+	&--home {
+		display: grid;
+		grid-template-columns: 3em auto;
+		grid-column-gap: 1em;
+		margin-bottom: 1em;
+		border-width: 1px;
+		border-style: solid;
+
+		#{$amp}__content,
 		#{$amp}__label {
-			background-color: $blog-bg;
+			grid-row: 1;
+		}
+
+		#{$amp}__label {
+			writing-mode: vertical-rl;
+			grid-column-start: 1;
+			transform: rotate(180deg);
+		}
+    }
+
+    &--demos {
+		grid-column-start: 2;
+        border-color: $demos-bg;
+		grid-template-columns: auto 3em;
+
+		#{$amp}__content {
+			grid-column-start: 1;
+		}
+
+		#{$amp}__label {
+			grid-column-start: 2;
+			transform: rotate(0deg);
+			background-color: $demos-bg;
 		}
 	}
 
-	&--demos {
+	&--blog {
+		grid-column-start: 1;
+        border-color: $blog-bg;
+
 		#{$amp}__label {
-			background-color: $demos-bg;
+			background-color: $blog-bg;
 		}
 	}
 }
 
 @media (min-width: 500px) {
-	.post--home,
 	.grid {
 		display: grid;
 	}
@@ -58,39 +75,4 @@ $blog-bg: hsla(150, 100%, 50%, 0.5);
             grid-auto-flow: column;
         }
     }
-
-	.post {
-		$amp: &; // cache the reference to the top-level block
-
-		&--home {
-	        margin-bottom: 0;
-			grid-template-columns: 3em auto;
-			grid-column-gap: 1em;
-
-			#{$amp}__content,
-			#{$amp}__label {
-				grid-row: 1;
-			}
-
-			#{$amp}__label {
-				writing-mode: vertical-rl;
-				grid-column-start: 1;
-				padding: 0 1em;
-				transform: rotate(180deg);
-			}
-	    }
-
-		&--demos {
-			grid-template-columns: auto 3em;
-
-			#{$amp}__content {
-				grid-column-start: 1;
-			}
-
-			#{$amp}__label {
-				grid-column-start: 2;
-				transform: rotate(0deg);
-			}
-		}
-	}
 }
