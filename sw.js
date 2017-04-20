@@ -12,7 +12,6 @@ function updateStaticCache() {
         // These items won't block the installation of the Service Worker
         cache.addAll([
 			'/css/style.css',
-			'/css/font.css',
 			'/favicon.ico',
 			'/js/build/script.min.js',
 			'/manifest.json',
@@ -22,6 +21,10 @@ function updateStaticCache() {
 			'/images/manifest/ba-192.png',
 			'/images/manifest/ba-256.png',
 			'/images/manifest/ba-512.png',
+            '/fonts/roboto-slab-v6-latin-700.woff2',
+            '/fonts/roboto-slab-v6-latin-700.woff',
+            '/fonts/open-sans-v13-latin-regular.woff2',
+            '/fonts/open-sans-v13-latin-regular.woff',
         ]);
 
         // These items must be cached for the Service Worker to complete installation

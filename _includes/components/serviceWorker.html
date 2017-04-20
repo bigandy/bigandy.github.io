@@ -1,8 +1,10 @@
 <script>
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/sw.js')
-		.then((registration) => console.log('ServiceWorker registration successful'))
-		.catch((err) => console.log('ServiceWorker registration failed: ', err));
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register('/sw.js')
+			.then((registration) => console.log('ServiceWorker registration successful'))
+			.catch((err) => console.log('ServiceWorker registration failed: ', err));
+	});
 } else {
 	console.log('Sorry your browser doesn\'t currently support serviceWorker');
 }
