@@ -2,6 +2,13 @@
 		{% include components/serviceWorker.html %}
 		<script src="/js/build/script.min.js" async defer></script>
 	{% endif %}
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6954334-6"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'UA-6954334-6');
+	</script>
 	</body>
 </html>
