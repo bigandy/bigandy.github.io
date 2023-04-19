@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-	{% if site.github %}
-		<style>{% include build/critical.css %}</style>
-	{% else %}
-		<link rel="stylesheet" href="/css/style.css" />
-	{% endif %}
+    <meta charset="utf-8" />
+    {% if site.github %}
+    <style>
+      {% include build/critical.css %}
+    </style>
+    {% else %}
+    <link rel="stylesheet" href="/css/style.css" />
+    {% endif %}
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#AEEEEE" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <link rel="preload" href="/fonts/roboto-slab-v6-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/open-sans-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
+    <link
+      rel="preload"
+      href="/fonts/roboto-slab-v6-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/open-sans-v13-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="alternate" title="{{ site.title }}" type="application/json"
+    href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
   </head>
-<body class="page {{ page.page-class }}">
-  <header class="header">
-    <h1>
-      <a href="/">bigandy.pw</a>
-    </h1>
-    {% include components/nav.html %}
-  </header>
+  <body class="page {{ page.page-class }}">
+    <header class="header">
+      <h1>
+        <a href="/">bigandy.github.io</a>
+      </h1>
+      {% include components/nav.html %}
+    </header>
+  </body>
+</html>

@@ -3,8 +3,12 @@ layout: post-demos
 title: getUserMedia get Dominant Colour
 published: true
 category: demos
-custom-script: [<script src="/js/color-thief.js"></script><script src="/js/getUserMedia-color-thief.js"></script>]
+custom-script: [
+    <script src="/js/color-thief.js"></script>
+    <script src="/js/getUserMedia-color-thief.js"></script>,
+  ]
 ---
+
 <style>
 
 #photo, 
